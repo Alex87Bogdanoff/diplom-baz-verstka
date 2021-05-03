@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard - художественная галерея</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__top-menu">
+        <a aria-label="Логотип художественной галереи Blanchard" class="header__logo logo" href="">
+          <img src="/img/header_img/logo.svg" alt="Художественная галерея Blanchard">
+        </a>
+        <nav aria-label="Главное меню" class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+            <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
+            <li class="nav__item"><a href="" class="nav__link">События</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Издания</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Проекты</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+          </ul>
+          <form class="header__private private">
+            <a id="private-enter" href="" class="private-enter">
+              Войти
+            </a>
+          </form>
+        </nav>
+      </div>
+      <div class="header__bottom-menu bottom-menu">
+        <div class="bottom-menu__list">
+          <div class="list__item">
+            <button onclick="myFunction1()" aria-label="Познакомиться с представителями реализма"
+              class="list__title item--1">Реализм</button>
+            <ul id="scroll--1" class="list-scroll scroll--1" data-simplebar>
+              <li class="scroll-item" style="background-image: url(img/header_img/Tin.jpg);">
+                <a class="scroll-link">
+                  Тинторетто
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Fri.jpg);">
+                <a class="scroll-link">
+                  Фридрих
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Leo.jpg);">
+                <a class="scroll-link">
+                  Леонардо
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Ver.jpg);">
+                <a class="scroll-link">
+                  Веррокьо
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="list__item">
+            <button onclick="myFunction2()" aria-label="Познакомиться с представителями импрессионизма"
+              class="list__title item--2">Импрессионизм</button>
+            <ul id="scroll--2" class="list-scroll scroll--2" data-simplebar>
+              <li class="scroll-item" style="background-image: url(img/header_img/Mon.jpg);">
+                <a class="scroll-link">
+                  Моне
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Sis.jpg);">
+                <a class="scroll-link">
+                  Сислей
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Man.jpg);">
+                <a class="scroll-link">
+                  Мане
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Ren.jpg);">
+                <a class="scroll-link">
+                  Ренуар
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="list__item">
+            <button onclick="myFunction3()" aria-label="Познакомиться с представителями постимпрессионизма"
+              class="list__title item--3">Постимпрессионизм</button>
+            <ul id="scroll--3" class="list-scroll scroll--3" data-simplebar>
+              <li class="scroll-item" style="background-image: url(img/header_img/Van.jpg);">
+                <a class="scroll-link">
+                  Ван Гог
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Sez.jpg);">
+                <a class="scroll-link">
+                  Сезанн
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Gog.jpg);">
+                <a class="scroll-link">
+                  Гоген
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Ser.jpg);">
+                <a class="scroll-link">
+                  Сёра
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="list__item">
+            <button onclick="myFunction4()" aria-label="Познакомиться с представителями авангарда"
+              class="list__title item--4">Авангард</button>
+            <ul id="scroll--4" class="list-scroll scroll--4" data-simplebar>
+              <li class="scroll-item" style="background-image: url(img/header_img/Kan.jpg);">
+                <a class="scroll-link">
+                  Кандинский
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Mar.jpg);">
+                <a class="scroll-link">
+                  Маринетти
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Mal.jpg);">
+                <a class="scroll-link">
+                  Малевич
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Pic.jpg);">
+                <a class="scroll-link">
+                  Пикассо
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="list__item">
+            <button onclick="myFunction5()" aria-label="Познакомиться с представителями футуризма"
+              class="list__title item--5">Футуризм</button>
+            <ul id="scroll--5" class="list-scroll scroll--5" data-simplebar>
+              <li class="scroll-item" style="background-image: url(img/header_img/Kar.jpg);">
+                <a class="scroll-link">
+                  Карра
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Pra.jpg);">
+                <a class="scroll-link">
+                  Прателла
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Sev.jpg);">
+                <a class="scroll-link">
+                  Северини
+                </a>
+              </li>
+              <li class="scroll-item" style="background-image: url(img/header_img/Bal.jpg);">
+                <a class="scroll-link">
+                  Балла
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="bottom-menu search">
+          <button aria-label="Найти" type="submit" class="search__btn"></button>
+          <input type="text" placeholder="Поиск по сайту" class="search__input">
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 aria-label="Художественная галерея Blanchard - прикоснитесь к прекрасному" class="hero__title">
+            Прикоснитесь к прекрасному
+          </h1>
+          <p class="hero__descr">
+            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
+            предложений.
+          </p>
+          <button aria-label="Подписаться на рассылку" class="hero__btn">Подписаться на рассылку</button>
+        </div>
+        <div class="hero__animation animation">
+          <picture class="animation__item animation__item--1">
+            <source media="(max-width: 320px)" srcset="img/hero_img/slider__item-1--320.jpg">
+            <source media="(max-width: 768px)" srcset="img/hero_img/slider__item-1--768.jpg">
+            <source media="(max-width: 1024px)" srcset="img/hero_img/slider__item-1--1024.jpg">
+            <img src="img/hero_img/slider__item-1.jpg" class="animation__img" alt="">
+          </picture>
+          <picture class="animation__item animation__item--2">
+            <source media="(max-width: 320px)" srcset="img/hero_img/slider__item-2--320.jpg">
+            <source media="(max-width: 768px)" srcset="img/hero_img/slider__item-2--768.jpg">
+            <source media="(max-width: 1024px)" srcset="img/hero_img/slider__item-2--1024.jpg">
+            <img src="img/hero_img/slider__item-2.jpg" class="animation__img" alt="">
+          </picture>
+          <picture class="animation__item animation__item--3">
+            <source media="(max-width: 320px)" srcset="img/hero_img/slider__item-3--320.jpg">
+            <source media="(max-width: 768px)" srcset="img/hero_img/slider__item-3--768.jpg">
+            <source media="(max-width: 1024px)" srcset="img/hero_img/slider__item-3--1024.jpg">
+            <img src="img/hero_img/slider__item-3.jpg" class="animation__img" alt="">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class=" container about__container">
+        <h2 id="about" aria-label="Информация о художественной галереи" class="about__title title">О нас</h2>
+        <p class="about__descr">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+          участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов.
+          Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс
+          внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных
+          исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+          учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов,
+          действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны
+          быть разоблачены.
+        </p>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container gallery__container">
+        <div id="myfond_gris" opendiv=""></div>
+        <div id="box_1" class="gallery__coverbox coverbox">
+          <div class="coverbox__item">
+            <img src="img/gallery_img/swip__slide-1--click.jpg"
+              alt="Картина: “Торс (Фигура с розовым лицом)”, автор: Казимир Малевич">
+            <div class="coverbox__text">
+              <p class="coverbox__text-artist">Казимир Малевич</p>
+              <p class="coverbox__text-picture">“Торс (Фигура с розовым лицом)”</p>
+              <p class="coverbox__text-years">1928-1929</p>
+              <p class="coverbox__text-desc">Продолжая идеи супрематизации человеческого образа Малевич создает эту
+                картину, на которой изображен обезличенный торс, который больше напоминает манекен портного.</p>
+              <div class="coverbox__btn"></div>
+            </div>
+          </div>
+        </div>
+        <div id="box_2" class="gallery__coverbox coverbox">
+          <div class="coverbox__item">
+            <img src="img/gallery_img/swip__slide-2--click.jpg" alt="Картина: “Кубики”, автор: Казимир Малевич">
+            <div class="coverbox__text">
+              <p class="coverbox__text-artist">Казимир Малевич</p>
+              <p class="coverbox__text-picture">“Кубики”</p>
+              <p class="coverbox__text-years">1930-1931</p>
+              <p class="coverbox__text-desc">Любимая с дества игра в кубики не оставляла Казимира и в зрелом возрасте.
+              </p>
+              <div class="coverbox__btn"></div>
+            </div>
+          </div>
+        </div>
+        <div id="box_3" class="gallery__coverbox coverbox">
+          <div class="coverbox__item">
+            <img src="img/gallery_img/swip__slide-3--click.jpg"
+              alt="Картина: “Женщина с граблями”, автор: Казимир Малевич">
+            <div class="coverbox__text">
+              <p class="coverbox__text-artist">Казимир Малевич</p>
+              <p class="coverbox__text-picture">“Женщина с граблями”</p>
+              <p class="coverbox__text-years">1931-1932</p>
+              <p class="coverbox__text-desc">Картина из второй серии крестьянского цикла работ Казимира Малевича.
+                Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после
+                Берлинской и Варшавской выставок в 1927 году.</p>
+              <div class="coverbox__btn"></div>
+            </div>
+          </div>
+        </div>
+        <div id="box_4" class="gallery__coverbox coverbox">
+          <div class="coverbox__item">
+            <img src="img/gallery_img/swip__slide-4--click.jpg"
+              alt="Картина: “Женщина с вёдрами”, автор: Казимир Малевич">
+            <div class="coverbox__text">
+              <p class="coverbox__text-artist">Казимир Малевич</p>
+              <p class="coverbox__text-picture">“Женщина с вёдрами”</p>
+              <p class="coverbox__text-years">1912</p>
+              <p class="coverbox__text-desc">Картина из второй серии крестьянского цикла работ Казимира Малевича.
+                Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после
+                Берлинской и Варшавской выставок в 1927 году.</p>
+              <div class="coverbox__btn"></div>
+            </div>
+          </div>
+        </div>
+        <div id="box_5" class="gallery__coverbox coverbox"></div>
+        <div id="box_6" class="gallery__coverbox coverbox"></div>
+        <div id="box_7" class="gallery__coverbox coverbox"></div>
+        <div id="box_8" class="gallery__coverbox coverbox"></div>
+        <div id="box_9" class="gallery__coverbox coverbox"></div>
+        <div id="box_10" class="gallery__coverbox coverbox"></div>
+        <div id="box_11" class="gallery__coverbox coverbox"></div>
+        <div id="box_12" class="gallery__coverbox coverbox"></div>
+        <div id="box_13" class="gallery__coverbox coverbox"></div>
+        <div id="box_14" class="gallery__coverbox coverbox"></div>
+        <div id="box_15" class="gallery__coverbox coverbox"></div>
+        <div id="box_16" class="gallery__coverbox coverbox"></div>
+        <div id="box_17" class="gallery__coverbox coverbox"></div>
+        <div id="box_18" class="gallery__coverbox coverbox"></div>
+        <div id="box_19" class="gallery__coverbox coverbox"></div>
+        <div id="box_20" class="gallery__coverbox coverbox"></div>
+        <div id="box_21" class="gallery__coverbox coverbox"></div>
+        <div id="box_22" class="gallery__coverbox coverbox"></div>
+        <div id="box_23" class="gallery__coverbox coverbox"></div>
+        <div id="box_24" class="gallery__coverbox coverbox"></div>
+        <div id="box_25" class="gallery__coverbox coverbox"></div>
+        <div id="box_26" class="gallery__coverbox coverbox"></div>
+        <div id="box_27" class="gallery__coverbox coverbox"></div>
+        <div id="box_28" class="gallery__coverbox coverbox"></div>
+        <div id="box_29" class="gallery__coverbox coverbox"></div>
+        <div id="box_30" class="gallery__coverbox coverbox"></div>
+        <div class="gallery__left">
+          <h2 id="gallery" aria-label="Галерея" class="gallery__title title">Галерея</h2>
+          <div class="gallery__filter">
+            <p class="gallery__filter-descr">Фильтровать по:</p>
+            <select name="select" class="gallery__select">
+              <option selected value="Автор">Автор</option>
+              <option value="Направление">Направление</option>
+              <option value="Техника">Техника</option>
+            </select>
+          </div>
+          <p class="gallery__descr">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#private-enter"
+              class="gallery__private-link">авторизуйтесь,</a> либо воспользуйтесь лицензией.
+          </p>
+        </div>
+        <div class="gallery__right">
+          <div class="swiper-container gallery__swiper swip">
+            <div class="swiper-button-prev swip__btn-prev"></div>
+            <div class="swiper-button-next swip__btn-next"></div>
+            <div class="swiper-pagination swip__pagination"></div>
+            <div class="swiper-wrapper swip__wrapper">
+              <picture iddiv="box_1" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-1--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-1--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-1--1024.jpg">
+                <img src="img/gallery_img/swip__slide-1.jpg"
+                  alt="Картина: “Торс (Фигура с розовым лицом)”, автор: Казимир Малевич">
+              </picture>
+              <picture iddiv="box_2" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-2--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-2--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-2--1024.jpg">
+                <img src="img/gallery_img/swip__slide-2.jpg" alt="Картина: “Кубики”, автор: Казимир Малевич">
+              </picture>
+              <picture iddiv="box_3" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-3--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-3--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-3--1024.jpg">
+                <img src="img/gallery_img/swip__slide-3.jpg"
+                  alt="Картина: “Женщина с граблями”, автор: Казимир Малевич">
+              </picture>
+              <picture iddiv="box_4" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-4--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-4--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-4--1024.jpg">
+                <img src="img/gallery_img/swip__slide-4.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_5" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-5--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-5--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-5--1024.jpg">
+                <img src="img/gallery_img/swip__slide-5.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_6" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-6--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-6--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-6--1024.jpg">
+                <img src="img/gallery_img/swip__slide-6.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_7" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-7--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-7--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-7--1024.jpg">
+                <img src="img/gallery_img/swip__slide-7.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_8" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-8--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-8--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-8--1024.jpg">
+                <img src="img/gallery_img/swip__slide-8.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_9" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-9--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-9--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-9--1024.jpg">
+                <img src="img/gallery_img/swip__slide-9.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_10" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-10--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-10--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-10--1024.jpg">
+                <img src="img/gallery_img/swip__slide-10.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_11" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-11--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-11--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-11--1024.jpg">
+                <img src="img/gallery_img/swip__slide-11.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_12" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-12--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-12--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-12--1024.jpg">
+                <img src="img/gallery_img/swip__slide-12.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_13" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-13--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-13--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-13--1024.jpg">
+                <img src="img/gallery_img/swip__slide-13.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_14" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-14--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-14--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-14--1024.jpg">
+                <img src="img/gallery_img/swip__slide-14.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_15" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-15--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-15--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-15--1024.jpg">
+                <img src="img/gallery_img/swip__slide-15.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_16" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-16--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-16--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-16--1024.jpg">
+                <img src="img/gallery_img/swip__slide-16.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_17" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-17--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-17--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-17--1024.jpg">
+                <img src="img/gallery_img/swip__slide-17.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_18" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-18--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-18--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-18--1024.jpg">
+                <img src="img/gallery_img/swip__slide-18.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_19" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-19--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-19--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-19--1024.jpg">
+                <img src="img/gallery_img/swip__slide-19.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_20" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-20--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-20--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-20--1024.jpg">
+                <img src="img/gallery_img/swip__slide-20.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_21" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-21--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-21--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-21--1024.jpg">
+                <img src="img/gallery_img/swip__slide-21.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_22" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-22--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-22--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-22--1024.jpg">
+                <img src="img/gallery_img/swip__slide-22.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_23" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-23--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-23--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-23--1024.jpg">
+                <img src="img/gallery_img/swip__slide-23.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_24" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-24--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-24--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-24--1024.jpg">
+                <img src="img/gallery_img/swip__slide-24.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_25" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-25--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-25--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-25--1024.jpg">
+                <img src="img/gallery_img/swip__slide-25.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_26" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-26--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-26--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-26--1024.jpg">
+                <img src="img/gallery_img/swip__slide-26.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_27" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-27--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-27--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-27--1024.jpg">
+                <img src="img/gallery_img/swip__slide-27.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_28" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-28--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-28--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-28--1024.jpg">
+                <img src="img/gallery_img/swip__slide-28.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_29" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-29--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-29--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-29--1024.jpg">
+                <img src="img/gallery_img/swip__slide-29.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+              <picture iddiv="box_30" class="swiper-slide swip__slide mymagicoverbox">
+                <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-30--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-30--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-30--1024.jpg">
+                <img src="img/gallery_img/swip__slide-30.jpg" alt="Картина: изумительная, автор: молодец">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container catalog__container">
+        <div class="catalog__head">
+          <h2 id="catalog" aria-label="Каталог" class="catalog__title title">Каталог</h2>
+          <ul aria-label="Национальность художника" class="catalog__country tabs-country">
+            <li>
+              <button aria-label="Французские художники" class="tabs-country__btn" data-path="one">
+                <img src="img/catalog_img/country_fra.svg" alt="">
+              </button>
+            </li>
+            <li>
+              <button aria-label="Немецкие художники" class="tabs-country__btn" data-path="two">
+                <img src="img/catalog_img/country_ger.svg" alt="">
+              </button>
+            </li>
+            <li>
+              <button aria-label="Итальянские художники" class="tabs-country__btn tabs-country__btn-active"
+                data-path="three">
+                <img src="img/catalog_img/country_ita.svg" alt="">
+              </button>
+            </li>
+            <li>
+              <button aria-label="Русские художники" class="tabs-country__btn" data-path="four">
+                <img src="img/catalog_img/country_rus.svg" alt="">
+              </button>
+            </li>
+            <li>
+              <button aria-label="Бельгийские художники" class="tabs-country__btn" data-path="five">
+                <img src="img/catalog_img/country_bel.svg" alt="">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <p class="catalog__descr">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
+          частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
+          уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+        </p>
+        <div class="tabs__item" data-target="one"></div>
+        <div class="tabs__item" data-target="two"></div>
+        <div class="tabs__item tabs__item-active" data-target="three">
+          <div class="tabs__left">
+            <div class="artist__item artist__item-active" data-target="twelve">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/domenico--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/domenico--768.jpg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/domenico--1024.jpg">
+                <img src="img/catalog_img/domenico.jpg" alt="Портрет Доменико Гирландайо">
+              </picture>
+              <p class="artist__name">Доменико Гирландайо</p>
+              <p class="artist__years">2 июня 1448 — 11 января 1494.</p>
+              <p class="artist__biography">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной
+                династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
+                Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых
+                выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли
+                выступают
+                знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="artist__item" data-target="twenty five">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/stark--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/stark--768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/catalog_img/stark--1024.jpg">
+                <img src="img/catalog_img/stark.jpg" alt="Фото Тони Старка">
+              </picture>
+              <p class="artist__name">Тони Старк</p>
+              <p class="artist__years">1970 — 2023</p>
+              <p class="artist__biography">Энтони Эдвард Старк (англ. Anthony Edward Stark), чаще именуемый Тони (англ.
+                Tony), был эксцентричным гением, миллиардером, плейбойем и филантропом. Использовав своё собственное
+                богатство и свои технические знания, он так и был плейбоем, пока его не похитила террористическая
+                организация Десять колец. С помощью учёного Хо Инсена Тони создал огромный бронированный костюм, убил
+                похитителей и сбежал. После побега Тони решил стать супергероем в бронированном костюме, известным как
+                Железный человек (англ. Iron Man). Он сражался с различными террористами и со своим бывшем
+                бизнес-партнёром Обадайей Стейном. Старк наслаждался своей популярностью, как Железный человек, но позже
+                он решил раскрыть свою супергеройскую личность всему миру.</p>
+            </div>
+          </div>
+          <div class="tabs__right">
+            <div id="accordion" class="accordion">
+              <div class="accordion__item">
+                <buttton aria-label="Итальянские художники пятнадцатого века" class="accordion__btn">
+                  <p class="accordion__heading">С 1400 по 1499 гг.</p>
+                </buttton>
+              </div>
+              <div class="accordion__descr" height="auto">
+                <button class="accordion__artist-name" data-path="one">Бенедетто ди Биндо</button>
+                <br><button class="accordion__artist-name" data-path="two">Бергоньоне, Амброджо</button>
+                <br><button class="accordion__artist-name" data-path="three">Биссоло, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="four">Больтраффио, Джованни</button>
+                <br><button class="accordion__artist-name" data-path="five">Бонсиньори, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="six">Боттичини, Рафаэлло</button>
+                <br><button class="accordion__artist-name" data-path="seven">Брамантино</button>
+                <br><button class="accordion__artist-name" data-path="eight">Бреа, Людовико</button>
+                <br><button class="accordion__artist-name" data-path="nine">Бьяджо д’Антонио Туччи</button>
+                <br><button class="accordion__artist-name" data-path="ten">Веккьетта</button>
+                <br><button class="accordion__artist-name" data-path="eleven">Андреа Верроккьо</button>
+                <br><button class="accordion__artist-name accordion__artist-name-active" data-path="twelve">Доменико
+                  Гирландайо
+                </button>
+                <br><button class="accordion__artist-name" data-path="thirteen">Беноццо Гоццоли</button>
+                <br><button class="accordion__artist-name" data-path="foutrteen">Граначчи, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="fiveteen">Грегорио ди Чекко</button>
+                <br><button class="accordion__artist-name" data-path="sixteen">Джованни да Удине</button>
+                <br><button class="accordion__artist-name" data-path="seventeen">Джованни ди Паоло</button>
+                <br><button class="accordion__artist-name" data-path="eighteen">Джорджоне</button>
+                <br><button class="accordion__artist-name" data-path="nineteen">Парентино, Бернардо</button>
+                <br><button class="accordion__artist-name" data-path="twenty">Пезеллино</button>
+                <br><button class="accordion__artist-name" data-path="twenty one">Пьетро Перуджино</button>
+                <br><button class="accordion__artist-name" data-path="twenty two">Перуцци, Бальдассаре</button>
+                <br><button class="accordion__artist-name" data-path="twenty three">Пизанелло</button>
+                <br><button class="accordion__artist-name" data-path="twenty four">Пинтуриккьо</button>
+                <br><button class="accordion__artist-name" data-path="twenty five">Тони Старк</button>
+              </div>
+              <div class="accordion__item">
+                <buttton aria-label="Итальянские художники шестнадцатого века" class="accordion__btn">
+                  <p class="accordion__heading">С 1500 по 1599 гг.</p>
+                </buttton>
+              </div>
+              <div class="accordion__descr"></div>
+              <div class="accordion__item">
+                <buttton aria-label="Итальянские художники семнадцатого века" class="accordion__btn">
+                  <p class="accordion__heading">С 1600 по 1699 гг.</p>
+                </buttton>
+              </div>
+              <div class="accordion__descr"></div>
+              <div class="accordion__item">
+                <buttton aria-label="Итальянские художники восемнадцатого века" class="accordion__btn">
+                  <p class="accordion__heading">С 1700 по 1799 гг.</p>
+                </buttton>
+              </div>
+              <div class="accordion__descr"></div>
+              <div class="accordion__item">
+                <buttton aria-label="Итальянские художники девятнадцатого века" class="accordion__btn">
+                  <p class="accordion__heading">С 1800 по 1899 гг.</p>
+                </buttton>
+              </div>
+              <div class="accordion__descr"></div>
+              <div class="accordion__item">
+                <buttton aria-label="Итальянские художники двадцатого века" class="accordion__btn">
+                  <p class="accordion__heading">С 1900 по 1999 гг.</p>
+                </buttton>
+              </div>
+              <div class="accordion__descr"></div>
+              <div class="accordion__item">
+                <buttton aria-label="Итальянские художники современности" class="accordion__btn">
+                  <p class="accordion__heading">С 2000 г.</p>
+                </buttton>
+              </div>
+              <div class="accordion__descr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__item" data-target="four"></div>
+        <div class="tabs__item" data-target="five"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="/js/swiper-bundle.min.js"></script>
+  <script src="/js/choices.min.js"></script>
+  <script src="/js/index.js"></script>
+
+</body>
+
+</html>
