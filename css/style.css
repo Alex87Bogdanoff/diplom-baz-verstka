@@ -885,6 +885,7 @@ header {
 
 .catalog {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .catalog__container {
@@ -1144,6 +1145,17 @@ header {
 
 .accordion__artist-name-active {
   color: var(--purple-color);
+}
+
+/* events */
+
+.events {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.events__container {
+  padding: 0 159px 0 158px;
 }
 
 @media (max-width: 1800px) {
