@@ -24,85 +24,50 @@ const swiperGallery = new Swiper ('.gallery__swiper', {
   },
 
   breakpoints: {
-    1800: {
+    1: {
+      spaceBetween: 0,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      slidesPerColumn: 1,
+    },
+
+    321: {
+      spaceBetween: 34,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      slidesPerColumn: 2,
+    },
+    
+    769: {
+      spaceBetween: 34,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      slidesPerColumn: 2,
+    },
+
+    1801: {
       spaceBetween: 50,
       slidesPerView: 3,
       slidesPerGroup: 3,
       slidesPerColumn: 2,
     },
-
-    1300: {
-      spaceBetween: 34,
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      slidesPerColumn: 2,
-    },
-
-    768: {
-      spaceBetween: 34,
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      slidesPerColumn: 2,
-    },
-
-    320: {
-      spaceBetween: 1,
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      slidesPerColumn: 1,
-    },
   },
 });
-
-/* Событие клик Header */
-function myFunction1() {
-  document.getElementById("scroll--1").classList.toggle("is-active");
-}
-
-function myFunction2() {
-  document.getElementById("scroll--2").classList.toggle("is-active");
-}
-
-function myFunction3() {
-  document.getElementById("scroll--3").classList.toggle("is-active");
-}
-
-function myFunction4() {
-  document.getElementById("scroll--4").classList.toggle("is-active");
-}
-
-function myFunction5() {
-  document.getElementById("scroll--5").classList.toggle("is-active");
-}
-
-window.onclick = function (event) {
-  if (!event.target.matches('.list__title')) {
-
-    var dropdowns = document.getElementsByClassName("list-scroll");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('is-active')) {
-        openDropdown.classList.remove('is-active');
-      }
-    }
-  }
-}
 
 /* Клик Gallery */
 $(document).ready(function () {
   
-  $(".mymagicoverbox").click(function () {
-    $('#myfond_gris').fadeIn(300);
-    var iddiv = $(this).attr("iddiv");
+  $(".slide-hover").click(function () {
+    $('#gallery__hover').fadeIn(300);
+    var iddiv = $(this).attr("id-hover");
     $('#' + iddiv).fadeIn(300);
-    $('#myfond_gris').attr('opendiv', iddiv);
+    $('#gallery__hover').attr('open-info', iddiv);
     return false;
   });
 
-  $('#myfond_gris, .coverbox__btn').click(function () {
-    var iddiv = $("#myfond_gris").attr('opendiv');
-    $('#myfond_gris').fadeOut(300);
+  $('#gallery__hover, .hover__btn').click(function () {
+    var iddiv = $("#gallery__hover").attr('open-info');
+    $('#gallery__hover').fadeOut(300);
     $('#' + iddiv).fadeOut(300);
   });
 });
