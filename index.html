@@ -14,8 +14,8 @@
 
 <body>
   <header class="header">
-    <div class="container header__container">
-      <div class="header__top-menu">
+    <div class="header__top-menu top-menu">
+      <div class="container top-menu__container">
         <a aria-label="Логотип художественной галереи Blanchard" class="header__logo logo" href="">
           <img src="/img/header_img/logo.svg" alt="Художественная галерея Blanchard">
         </a>
@@ -25,23 +25,36 @@
             <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
             <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
             <li class="nav__item"><a href="#events" class="nav__link">События</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Издания</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Проекты</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+            <li class="nav__item"><a href="#publishes" class="nav__link">Издания</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
           </ul>
-          <form class="header__private private">
-            <a id="private-enter" href="" class="private-enter">
+          <form aria-label="Личный кабинет" class="header__private private">
+            <a id="private-enter" href="" class="private__enter">
+              <svg class="private__img" width="18" height="13" viewbox="0 0 18 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                  fill="white" />
+              </svg>
               Войти
             </a>
           </form>
         </nav>
       </div>
-      <div class="header__bottom-menu bottom-menu">
-        <div class="bottom-menu__list list">
-          <button aria-label="Познакомиться с представителями реализма" class="list__item">
-            <input type="checkbox" id="realism" class="list-item__checkbox" />
-            <label for="realism" class="list-item__title">Реализм</label>
-            <ul class="list-dropdown" data-simplebar>
+    </div>
+    <div class="header__sub-menu sub-menu">
+      <div class="container sub-menu__container">
+        <ul class="sub-menu__list list">
+          <li class="list__item list-item">
+            <button class="list-item__btn list-item__btn-1" data-path="realism">
+              <span class="list-item__title">Реализм</span>
+              <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+              </svg>
+            </button>
+            <ul class="list-dropdown list-dropdown-1" data-target="realism" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Tin.jpg);">
                 <a href="" class="list-dropdown__link">
                   Тинторетто
@@ -103,11 +116,16 @@
                 </a>
               </li>
             </ul>
-          </button>
-          <button aria-label="Познакомиться с представителями импрессионизма" class="list__item">
-            <input type="checkbox" id="impressionism" class="list-item__checkbox" />
-            <label for="impressionism" class="list-item__title">Импрессионизм</label>
-            <ul class="list-dropdown" data-simplebar>
+          </li>
+          <li class="list__item list-item">
+            <button class="list-item__btn list-item__btn-2">
+              <span class="list-item__title">Импрессионизм</span>
+              <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+              </svg>
+            </button>
+            <ul id="dropdown" class="list-dropdown list-dropdown-2" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Mon.jpg);">
                 <a href="" class="list-dropdown__link">
                   Моне
@@ -169,11 +187,16 @@
                 </a>
               </li>
             </ul>
-          </button>
-          <button aria-label="Познакомиться с представителями постимпрессионизма" class="list__item">
-            <input type="checkbox" id="post-impressionism" class="list-item__checkbox" />
-            <label for="post-impressionism" class="list-item__title">Постимпрессионизм</label>
-            <ul class="list-dropdown" data-simplebar>
+          </li>
+          <li class="list__item list-item">
+            <button class="list-item__btn list-item__btn-3" data-path="post-impressionism">
+              <span class="list-item__title">Постимпрессионизм</span>
+              <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+              </svg>
+            </button>
+            <ul class="list-dropdown list-dropdown-3" data-target="post-impressionism" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Van.jpg);">
                 <a href="" class="list-dropdown__link">
                   Ван Гог
@@ -235,11 +258,16 @@
                 </a>
               </li>
             </ul>
-          </button>
-          <button aria-label="Познакомиться с представителями авангарда" class="list__item">
-            <input type="checkbox" id="avant-garde" class="list-item__checkbox" />
-            <label for="avant-garde" class="list-item__title">Авангард</label>
-            <ul class="list-dropdown" data-simplebar>
+          </li>
+          <li class="list__item list-item">
+            <button class="list-item__btn list-item__btn-4" data-path="vanguard">
+              <span class="list-item__title">Авангард</span>
+              <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+              </svg>
+            </button>
+            <ul class="list-dropdown list-dropdown-4" data-target="vanguard" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Kan.jpg);">
                 <a href="" class="list-dropdown__link">
                   Кандинский
@@ -301,11 +329,16 @@
                 </a>
               </li>
             </ul>
-          </button>
-          <button aria-label="Познакомиться с представителями футуризма" class="list__item">
-            <input type="checkbox" id="futurism" class="list-item__checkbox" />
-            <label for="futurism" class="list-item__title">Футуризм</label>
-            <ul class="list-dropdown" data-simplebar>
+          </li>
+          <li class="list__item list-item">
+            <button class="list-item__btn list-item__btn-5" data-path="futurism">
+              <span class="list-item__title">Футуризм</span>
+              <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+              </svg>
+            </button>
+            <ul class="list-dropdown list-dropdown-5" id="dropdown5" data-target="futurism" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Kar.jpg);">
                 <a href="" class="list-dropdown__link">
                   Карра
@@ -367,9 +400,9 @@
                 </a>
               </li>
             </ul>
-          </button>
-        </div>
-        <form class="bottom-menu search">
+          </li>
+        </ul>
+        <form class="sub-menu search">
           <button aria-label="Найти" type="submit" class="search__btn"></button>
           <input type="text" placeholder="Поиск по сайту" class="search__input">
         </form>
@@ -381,7 +414,7 @@
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__content">
-          <h1 aria-label="Художественная галерея Blanchard - прикоснитесь к прекрасному" class="hero__title">
+          <h1 class="hero__title">
             Прикоснитесь к прекрасному
           </h1>
           <p class="hero__descr">
@@ -414,7 +447,7 @@
     </section>
     <section class="about">
       <div class="container about__container">
-        <h2 id="about" aria-label="Информация о художественной галереи" class="about__title title">О нас</h2>
+        <h2 id="about" class="about__title title">О нас</h2>
         <p class="about__descr">
           Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
           участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов.
@@ -429,7 +462,7 @@
     </section>
     <section class="gallery">
       <div class="container gallery__container">
-        <div id="gallery__hover" open-info=""></div>
+        <div id="gallery__hover"></div>
         <div id="box_1" class="gallery__hover hover">
           <div class="hover__item">
             <img src="img/gallery_img/swip__slide-1--click.jpg"
@@ -514,7 +547,7 @@
         <div id="box_29" class="gallery__hover hover"></div>
         <div id="box_30" class="gallery__hover hover"></div>
         <div class="gallery__left">
-          <h2 id="gallery" aria-label="Галерея" class="gallery__title title">Галерея</h2>
+          <h2 id="gallery" class="gallery__title title">Галерея</h2>
           <div class="gallery__filter">
             <p class="gallery__filter-descr">Фильтровать по:</p>
             <select name="select" class="gallery__select">
@@ -534,183 +567,183 @@
             <div class="swiper-button-next swip__btn-next"></div>
             <div class="swiper-pagination swip__pagination"></div>
             <div class="swiper-wrapper swip__wrapper">
-              <picture id-hover="box_1" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_1" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-1--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-1--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-1--1024.jpg">
                 <img src="img/gallery_img/swip__slide-1.jpg"
                   alt="Картина: “Торс (Фигура с розовым лицом)”, автор: Казимир Малевич">
               </picture>
-              <picture id-hover="box_2" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_2" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-2--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-2--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-2--1024.jpg">
                 <img src="img/gallery_img/swip__slide-2.jpg" alt="Картина: “Кубики”, автор: Казимир Малевич">
               </picture>
-              <picture id-hover="box_3" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_3" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-3--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-3--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-3--1024.jpg">
                 <img src="img/gallery_img/swip__slide-3.jpg"
                   alt="Картина: “Женщина с граблями”, автор: Казимир Малевич">
               </picture>
-              <picture id-hover="box_4" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_4" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-4--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-4--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-4--1024.jpg">
                 <img src="img/gallery_img/swip__slide-4.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_5" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_5" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-5--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-5--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-5--1024.jpg">
                 <img src="img/gallery_img/swip__slide-5.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_6" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_6" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-6--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-6--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-6--1024.jpg">
                 <img src="img/gallery_img/swip__slide-6.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_7" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_7" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-7--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-7--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-7--1024.jpg">
                 <img src="img/gallery_img/swip__slide-7.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_8" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_8" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-8--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-8--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-8--1024.jpg">
                 <img src="img/gallery_img/swip__slide-8.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_9" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_9" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-9--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-9--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-9--1024.jpg">
                 <img src="img/gallery_img/swip__slide-9.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_10" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_10" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-10--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-10--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-10--1024.jpg">
                 <img src="img/gallery_img/swip__slide-10.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_11" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_11" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-11--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-11--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-11--1024.jpg">
                 <img src="img/gallery_img/swip__slide-11.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_12" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_12" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-12--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-12--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-12--1024.jpg">
                 <img src="img/gallery_img/swip__slide-12.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_13" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_13" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-13--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-13--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-13--1024.jpg">
                 <img src="img/gallery_img/swip__slide-13.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_14" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_14" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-14--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-14--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-14--1024.jpg">
                 <img src="img/gallery_img/swip__slide-14.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_15" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_15" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-15--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-15--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-15--1024.jpg">
                 <img src="img/gallery_img/swip__slide-15.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_16" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_16" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-16--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-16--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-16--1024.jpg">
                 <img src="img/gallery_img/swip__slide-16.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_17" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_17" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-17--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-17--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-17--1024.jpg">
                 <img src="img/gallery_img/swip__slide-17.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_18" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_18" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-18--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-18--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-18--1024.jpg">
                 <img src="img/gallery_img/swip__slide-18.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_19" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_19" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-19--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-19--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-19--1024.jpg">
                 <img src="img/gallery_img/swip__slide-19.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_20" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_20" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-20--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-20--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-20--1024.jpg">
                 <img src="img/gallery_img/swip__slide-20.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_21" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_21" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-21--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-21--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-21--1024.jpg">
                 <img src="img/gallery_img/swip__slide-21.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_22" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_22" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-22--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-22--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-22--1024.jpg">
                 <img src="img/gallery_img/swip__slide-22.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_23" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_23" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-23--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-23--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-23--1024.jpg">
                 <img src="img/gallery_img/swip__slide-23.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_24" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_24" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-24--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-24--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-24--1024.jpg">
                 <img src="img/gallery_img/swip__slide-24.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_25" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_25" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-25--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-25--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-25--1024.jpg">
                 <img src="img/gallery_img/swip__slide-25.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_26" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_26" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-26--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-26--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-26--1024.jpg">
                 <img src="img/gallery_img/swip__slide-26.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_27" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_27" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-27--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-27--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-27--1024.jpg">
                 <img src="img/gallery_img/swip__slide-27.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_28" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_28" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-28--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-28--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-28--1024.jpg">
                 <img src="img/gallery_img/swip__slide-28.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_29" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_29" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-29--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-29--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-29--1024.jpg">
                 <img src="img/gallery_img/swip__slide-29.jpg" alt="Картина: изумительная, автор: молодец">
               </picture>
-              <picture id-hover="box_30" class="swiper-slide swip__slide slide-hover">
+              <picture data-path="box_30" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-30--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-30--768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-30--1024.jpg">
@@ -724,8 +757,8 @@
     <section class="catalog">
       <div class="container catalog__container">
         <div class="catalog__head">
-          <h2 id="catalog" aria-label="Каталог" class="catalog__title title">Каталог</h2>
-          <ul aria-label="Национальность художника" class="catalog__country tabs-country">
+          <h2 id="catalog" class="catalog__title title">Каталог</h2>
+          <ul class="catalog__country tabs-country">
             <li>
               <button aria-label="Французские художники" class="tabs-country__btn" data-path="one">
                 <img src="img/catalog_img/country_fra.svg" alt="">
@@ -802,12 +835,10 @@
           </div>
           <div class="tabs__right tabs-right">
             <div id="accordion" class="tabs-right__accordion accordion">
-              <div class="accordion__item">
-                <buttton aria-label="Итальянские художники пятнадцатого века" class="accordion__btn">
-                  <p class="accordion__heading">С 1400 по 1499 гг.</p>
-                </buttton>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1400 по 1499 гг.</p>
               </div>
-              <div class="accordion__descr" height="auto">
+              <div class="accordion__descr">
                 <button class="accordion__artist-name" data-path="one">Бенедетто ди Биндо</button>
                 <br><button class="accordion__artist-name" data-path="two">Бергоньоне, Амброджо</button>
                 <br><button class="accordion__artist-name" data-path="three">Биссоло, Франческо</button>
@@ -836,40 +867,28 @@
                 <br><button class="accordion__artist-name" data-path="twenty four">Пинтуриккьо</button>
                 <br><button class="accordion__artist-name" data-path="twenty five">Тони Старк</button>
               </div>
-              <div class="accordion__item">
-                <buttton aria-label="Итальянские художники шестнадцатого века" class="accordion__btn">
-                  <p class="accordion__heading">С 1500 по 1599 гг.</p>
-                </buttton>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1500 по 1599 гг.</p>
               </div>
               <div class="accordion__descr"></div>
-              <div class="accordion__item">
-                <buttton aria-label="Итальянские художники семнадцатого века" class="accordion__btn">
-                  <p class="accordion__heading">С 1600 по 1699 гг.</p>
-                </buttton>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1600 по 1699 гг.</p>
               </div>
               <div class="accordion__descr"></div>
-              <div class="accordion__item">
-                <buttton aria-label="Итальянские художники восемнадцатого века" class="accordion__btn">
-                  <p class="accordion__heading">С 1700 по 1799 гг.</p>
-                </buttton>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1700 по 1799 гг.</p>
               </div>
               <div class="accordion__descr"></div>
-              <div class="accordion__item">
-                <buttton aria-label="Итальянские художники девятнадцатого века" class="accordion__btn">
-                  <p class="accordion__heading">С 1800 по 1899 гг.</p>
-                </buttton>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1800 по 1899 гг.</p>
               </div>
               <div class="accordion__descr"></div>
-              <div class="accordion__item">
-                <buttton aria-label="Итальянские художники двадцатого века" class="accordion__btn">
-                  <p class="accordion__heading">С 1900 по 1999 гг.</p>
-                </buttton>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1900 по 1999 гг.</p>
               </div>
               <div class="accordion__descr"></div>
-              <div class="accordion__item">
-                <buttton aria-label="Итальянские художники современности" class="accordion__btn">
-                  <p class="accordion__heading">С 2000 г.</p>
-                </buttton>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 2000 г.</p>
               </div>
               <div class="accordion__descr"></div>
             </div>
@@ -879,11 +898,91 @@
         <div class="tabs__item" data-target="five"></div>
       </div>
     </section>
+    <!--
     <section class="events">
       <div class="container events__container">
-        <h2 id="events" aria-label="События" class="events__title title">События</h2>
+        <h2 id="events" class="events__title title">События</h2>
+        <ul class="events__list events-list">
+          <li class="events-list__item">
+            <picture class="events-list__picture">
+              <source media="(max-width: 320px)" srcset="img/events_img/events-1--320.jpg">
+              <source media="(max-width: 768px)" srcset="img/events_img/events-1--768.jpg">
+              <source media="(max-width: 1400px)" srcset="img/events_img/events-1--1024.jpg">
+              <img src="img/events_img/events-1.jpg" alt="">
+            </picture>
+            <p class="events-list__place">Музей им. Щусева</p>
+            <p class="events-list__dates">с 20 марта по 30 апреля</p>
+            <div class="events-list__descr">
+              <p class="events-list__title">Книжная гравюра в живом восприятии</p>
+              <p class="events-list__text">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+              <a href="" class="events-list__link">Подробнее</a>
+            </div>
+          </li>
+          <li class="events-list__item">
+            <picture class="events-list__picture">
+              <source media="(max-width: 320px)" srcset="img/events_img/events-2--320.jpg">
+              <source media="(max-width: 768px)" srcset="img/events_img/events-2--768.jpg">
+              <source media="(max-width: 1400px)" srcset="img/events_img/events-2--1024.jpg">
+              <img src="img/events_img/events-2.jpg" alt="">
+            </picture>
+            <p class="events-list__place"></p>
+            <p class="events-list__dates"></p>
+            <div class="events-list__descr">
+              <p class="events-list__title"></p>
+              <p class="events-list__text"></p>
+              <a href="" class="events-list__link">Подробнее</a>
+            </div>
+          </li>
+          <li class="events-list__item">
+            <picture class="events-list__picture">
+              <source media="(max-width: 320px)" srcset="img/events_img/events-3--320.jpg">
+              <source media="(max-width: 768px)" srcset="img/events_img/events-3--768.jpg">
+              <source media="(max-width: 1400px)" srcset="img/events_img/events-3--1024.jpg">
+              <img src="img/events_img/events-3.jpg" alt="">
+            </picture>
+            <p class="events-list__place"></p>
+            <p class="events-list__dates"></p>
+            <div class="events-list__descr">
+              <p class="events-list__title"></p>
+              <p class="events-list__text"></p>
+              <a href="" class="events-list__link">Подробнее</a>
+            </div>
+          </li>
+          <li class="events-list__item">
+            <picture class="events-list__picture">
+              <source media="(max-width: 320px)" srcset="img/events_img/events-4--320.jpg">
+              <source media="(max-width: 768px)" srcset="img/events_img/events-4--768.jpg">
+              <source media="(max-width: 1400px)" srcset="img/events_img/events-4--1024.jpg">
+              <img src="img/events_img/events-4.jpg" alt="">
+            </picture>
+            <p class="events-list__place"></p>
+            <p class="events-list__dates"></p>
+            <div class="events-list__descr">
+              <p class="events-list__title"></p>
+              <p class="events-list__text"></p>
+              <a href="" class="events-list__link">Подробнее</a>
+            </div>
+          </li>
+          <li class="events-list__item">
+            <picture class="events-list__picture">
+              <source media="(max-width: 320px)" srcset="img/events_img/events-5--320.jpg">
+              <source media="(max-width: 768px)" srcset="img/events_img/events-5--768.jpg">
+              <source media="(max-width: 1400px)" srcset="img/events_img/events-5--1024.jpg">
+              <img src="img/events_img/events-5.jpg" alt="">
+            </picture>
+            <p class="events-list__place"></p>
+            <p class="events-list__dates"></p>
+            <div class="events-list__descr">
+              <p class="events-list__title"></p>
+              <p class="events-list__text"></p>
+              <a href="" class="events-list__link">Подробнее</a>
+            </div>
+          </li>
+        </ul>
       </div>
-    </section>
+    </section>-->
+
   </main>
 
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
