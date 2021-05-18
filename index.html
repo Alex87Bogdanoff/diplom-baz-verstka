@@ -31,12 +31,6 @@
           </ul>
           <form aria-label="Личный кабинет" class="header__private private">
             <a id="private-enter" href="" class="private__enter">
-              <svg class="private__img" width="18" height="13" viewbox="0 0 18 13" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
-                  fill="white" />
-              </svg>
               Войти
             </a>
           </form>
@@ -47,14 +41,14 @@
       <div class="container sub-menu__container">
         <ul class="sub-menu__list list">
           <li class="list__item list-item">
-            <button class="list-item__btn list-item__btn-1" data-path="realism">
-              <span class="list-item__title">Реализм</span>
+            <button class="list-item__btn">
+              Реализм
               <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
               </svg>
             </button>
-            <ul class="list-dropdown list-dropdown-1" data-target="realism" data-simplebar>
+            <ul class="list-dropdown" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Tin.jpg);">
                 <a href="" class="list-dropdown__link">
                   Тинторетто
@@ -118,14 +112,14 @@
             </ul>
           </li>
           <li class="list__item list-item">
-            <button class="list-item__btn list-item__btn-2">
-              <span class="list-item__title">Импрессионизм</span>
+            <button class="list-item__btn">
+              Импрессионизм
               <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
               </svg>
             </button>
-            <ul id="dropdown" class="list-dropdown list-dropdown-2" data-simplebar>
+            <ul class="list-dropdown" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Mon.jpg);">
                 <a href="" class="list-dropdown__link">
                   Моне
@@ -189,14 +183,14 @@
             </ul>
           </li>
           <li class="list__item list-item">
-            <button class="list-item__btn list-item__btn-3" data-path="post-impressionism">
-              <span class="list-item__title">Постимпрессионизм</span>
+            <button class="list-item__btn">
+              Постимпрессионизм
               <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
               </svg>
             </button>
-            <ul class="list-dropdown list-dropdown-3" data-target="post-impressionism" data-simplebar>
+            <ul class="list-dropdown" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Van.jpg);">
                 <a href="" class="list-dropdown__link">
                   Ван Гог
@@ -260,14 +254,14 @@
             </ul>
           </li>
           <li class="list__item list-item">
-            <button class="list-item__btn list-item__btn-4" data-path="vanguard">
-              <span class="list-item__title">Авангард</span>
+            <button class="list-item__btn">
+              Авангард
               <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
               </svg>
             </button>
-            <ul class="list-dropdown list-dropdown-4" data-target="vanguard" data-simplebar>
+            <ul class="list-dropdown" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Kan.jpg);">
                 <a href="" class="list-dropdown__link">
                   Кандинский
@@ -331,14 +325,14 @@
             </ul>
           </li>
           <li class="list__item list-item">
-            <button class="list-item__btn list-item__btn-5" data-path="futurism">
-              <span class="list-item__title">Футуризм</span>
+            <button class="list-item__btn">
+              Футуризм
               <svg width="12" height="7" viewbox="0 0 12 7" class="list-item__arrow" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
               </svg>
             </button>
-            <ul class="list-dropdown list-dropdown-5" id="dropdown5" data-target="futurism" data-simplebar>
+            <ul class="list-dropdown" data-simplebar>
               <li class="list-dropdown__item" style="background-image: url(img/header_img/Kar.jpg);">
                 <a href="" class="list-dropdown__link">
                   Карра
@@ -460,6 +454,7 @@
         </p>
       </div>
     </section>
+    
     <section class="gallery">
       <div class="container gallery__container">
         <div id="gallery__hover"></div>
@@ -754,6 +749,7 @@
         </div>
       </div>
     </section>
+    
     <section class="catalog">
       <div class="container catalog__container">
         <div class="catalog__head">
@@ -898,90 +894,96 @@
         <div class="tabs__item" data-target="five"></div>
       </div>
     </section>
-    <!--
+
     <section class="events">
       <div class="container events__container">
         <h2 id="events" class="events__title title">События</h2>
-        <ul class="events__list events-list">
-          <li class="events-list__item">
-            <picture class="events-list__picture">
-              <source media="(max-width: 320px)" srcset="img/events_img/events-1--320.jpg">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-1--768.jpg">
-              <source media="(max-width: 1400px)" srcset="img/events_img/events-1--1024.jpg">
-              <img src="img/events_img/events-1.jpg" alt="">
-            </picture>
-            <p class="events-list__place">Музей им. Щусева</p>
-            <p class="events-list__dates">с 20 марта по 30 апреля</p>
-            <div class="events-list__descr">
-              <p class="events-list__title">Книжная гравюра в живом восприятии</p>
-              <p class="events-list__text">Один из ведущих флорентийских художников Кватроченто, основатель
-                художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-              <a href="" class="events-list__link">Подробнее</a>
-            </div>
-          </li>
-          <li class="events-list__item">
-            <picture class="events-list__picture">
-              <source media="(max-width: 320px)" srcset="img/events_img/events-2--320.jpg">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-2--768.jpg">
-              <source media="(max-width: 1400px)" srcset="img/events_img/events-2--1024.jpg">
-              <img src="img/events_img/events-2.jpg" alt="">
-            </picture>
-            <p class="events-list__place"></p>
-            <p class="events-list__dates"></p>
-            <div class="events-list__descr">
-              <p class="events-list__title"></p>
-              <p class="events-list__text"></p>
-              <a href="" class="events-list__link">Подробнее</a>
-            </div>
-          </li>
-          <li class="events-list__item">
-            <picture class="events-list__picture">
-              <source media="(max-width: 320px)" srcset="img/events_img/events-3--320.jpg">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-3--768.jpg">
-              <source media="(max-width: 1400px)" srcset="img/events_img/events-3--1024.jpg">
-              <img src="img/events_img/events-3.jpg" alt="">
-            </picture>
-            <p class="events-list__place"></p>
-            <p class="events-list__dates"></p>
-            <div class="events-list__descr">
-              <p class="events-list__title"></p>
-              <p class="events-list__text"></p>
-              <a href="" class="events-list__link">Подробнее</a>
-            </div>
-          </li>
-          <li class="events-list__item">
-            <picture class="events-list__picture">
-              <source media="(max-width: 320px)" srcset="img/events_img/events-4--320.jpg">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-4--768.jpg">
-              <source media="(max-width: 1400px)" srcset="img/events_img/events-4--1024.jpg">
-              <img src="img/events_img/events-4.jpg" alt="">
-            </picture>
-            <p class="events-list__place"></p>
-            <p class="events-list__dates"></p>
-            <div class="events-list__descr">
-              <p class="events-list__title"></p>
-              <p class="events-list__text"></p>
-              <a href="" class="events-list__link">Подробнее</a>
-            </div>
-          </li>
-          <li class="events-list__item">
-            <picture class="events-list__picture">
-              <source media="(max-width: 320px)" srcset="img/events_img/events-5--320.jpg">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-5--768.jpg">
-              <source media="(max-width: 1400px)" srcset="img/events_img/events-5--1024.jpg">
-              <img src="img/events_img/events-5.jpg" alt="">
-            </picture>
-            <p class="events-list__place"></p>
-            <p class="events-list__dates"></p>
-            <div class="events-list__descr">
-              <p class="events-list__title"></p>
-              <p class="events-list__text"></p>
-              <a href="" class="events-list__link">Подробнее</a>
-            </div>
-          </li>
-        </ul>
+        <div class="swiper-container events__swiper">
+          <ul class="swiper-wrapper events__list events-list">
+            <li class="swiper-slide events-list__item">
+              <picture class="events-list__picture">
+                <source media="(max-width: 320px)" srcset="img/events_img/events-1--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/events_img/events-1--768.jpg">
+                <source media="(max-width: 1400px)" srcset="img/events_img/events-1--1024.jpg">
+                <img src="img/events_img/events-1.jpg" alt="">
+              </picture>
+              <p class="events-list__place">Музей им. Щусева</p>
+              <p class="events-list__dates">с 20 марта по 30 апреля</p>
+              <div class="events-list__descr">
+                <p class="events-list__title">Книжная гравюра в живом восприятии</p>
+                <p class="events-list__text">Один из ведущих флорентийских художников Кватроченто, основатель
+                  художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a href="" class="events-list__link">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide events-list__item">
+              <picture class="events-list__picture">
+                <source media="(max-width: 320px)" srcset="img/events_img/events-2--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/events_img/events-2--768.jpg">
+                <source media="(max-width: 1400px)" srcset="img/events_img/events-2--1024.jpg">
+                <img src="img/events_img/events-2.jpg" alt="">
+              </picture>
+              <p class="events-list__place">ММОМА</p>
+              <p class="events-list__dates">24 марта 19:00</p>
+              <div class="events-list__descr">
+                <p class="events-list__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</p>
+                <p class="events-list__text">Высокий уровень вовлечения представителей целевой аудитории является четким
+                  доказательством простого факта.</p>
+                <a href="" class="events-list__link">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide events-list__item">
+              <picture class="events-list__picture">
+                <source media="(max-width: 320px)" srcset="img/events_img/events-3--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/events_img/events-3--768.jpg">
+                <source media="(max-width: 1400px)" srcset="img/events_img/events-3--1024.jpg">
+                <img src="img/events_img/events-3.jpg" alt="">
+              </picture>
+              <p class="events-list__place">Еврейский музей</p>
+              <p class="events-list__dates">с 31 марта по 21 апреля</p>
+              <div class="events-list__descr">
+                <p class="events-list__title">Выставка «Формация 2020»</p>
+                <p class="events-list__text">Идейные соображения высшего порядка, а также современная методология
+                  разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                <a href="" class="events-list__link">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide events-list__item">
+              <picture class="events-list__picture">
+                <source media="(max-width: 320px)" srcset="img/events_img/events-4--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/events_img/events-4--768.jpg">
+                <source media="(max-width: 1400px)" srcset="img/events_img/events-4--1024.jpg">
+                <img src="img/events_img/events-4.jpg" alt="">
+              </picture>
+              <p class="events-list__place">Третьяковка на Крымском валу</p>
+              <p class="events-list__dates">с 30 марта по 30 апреля</p>
+              <div class="events-list__descr">
+                <p class="events-list__title">XXIV Международная биеннале молодого искусства</p>
+                <p class="events-list__text">Внезапно, реплицированные с зарубежных источников, современные
+                  исследования.</p>
+                <a href="" class="events-list__link">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide events-list__item">
+              <picture class="events-list__picture">
+                <source media="(max-width: 320px)" srcset="img/events_img/events-5--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/events_img/events-5--768.jpg">
+                <source media="(max-width: 1400px)" srcset="img/events_img/events-5--1024.jpg">
+                <img src="img/events_img/events-5.jpg" alt="">
+              </picture>
+              <p class="events-list__place">ММАМ</p>
+              <p class="events-list__dates">с 8 апреля по 20 мая</p>
+              <div class="events-list__descr">
+                <p class="events-list__title">Джон Винзор. Фотографии из серии «Метафора серебра»</p>
+                <p class="events-list__text">Один из ведущих флорентийских художников Кватроченто, основатель
+                  художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a href="" class="events-list__link">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>-->
+    </section>
 
   </main>
 
