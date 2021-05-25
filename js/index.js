@@ -86,21 +86,21 @@ const swiperGallery = new Swiper('.gallery__swiper', {
 });
 
 /* Клик Gallery */
-$('#gallery__hover').attr('open-info');
+$('#gallery__modal').attr('open-info');
 
 $(document).ready(function () {
 
   $(".slide-hover").click(function () {
-    $('#gallery__hover').fadeIn(300);
+    $('#gallery__modal').fadeIn(300);
     var iddiv = $(this).attr("data-path");
     $('#' + iddiv).fadeIn(300);
-    $('#gallery__hover').attr('open-info', iddiv);
+    $('#gallery__modal').attr('open-info', iddiv);
     return false;
   });
 
-  $('#gallery__hover, .hover__btn').click(function () {
-    var iddiv = $("#gallery__hover").attr('open-info');
-    $('#gallery__hover').fadeOut(300);
+  $('#gallery__modal, .modal__btn').click(function () {
+    var iddiv = $("#gallery__modal").attr('open-info');
+    $('#gallery__modal').fadeOut(300);
     $('#' + iddiv).fadeOut(300);
   });
 });
