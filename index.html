@@ -17,7 +17,7 @@
     <div class="header__top-menu top-menu">
       <div class="container top-menu__container">
         <a aria-label="Логотип художественной галереи Blanchard" class="header__logo logo" href="">
-          <img src="/img/header_img/logo.svg" alt="Художественная галерея Blanchard">
+          <img src="/img/header_img/logo.svg" class="logo__img" alt="Художественная галерея Blanchard">
         </a>
         <nav aria-label="Главное меню" class="header__nav nav">
           <ul class="nav__list">
@@ -29,11 +29,14 @@
             <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
             <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
           </ul>
-          <form aria-label="Личный кабинет" class="header__private private">
-            <a id="private-enter" href="" class="private__enter">
-              Войти
-            </a>
-          </form>
+          <a id="private-enter" href="" class="private__enter">
+            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" class="private__arrow" xmlns="http://www.w3.org/2000/svg">
+              <path class="private__arrow-path"
+                d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                fill="white" />
+            </svg>
+            <span>Войти</span>
+          </a>
         </nav>
       </div>
     </div>
@@ -376,8 +379,16 @@
             </ul>
           </li>
         </ul>
-        <form class="sub-menu search">
-          <button aria-label="Найти" type="submit" class="search__btn"></button>
+        <form class="sub-menu__search search">
+          <button aria-label="Найти" type="submit" class="search__btn">
+            <svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                fill="white" />
+            </svg>
+          </button>
           <input type="text" placeholder="Поиск по сайту" class="search__input">
         </form>
       </div>
@@ -386,16 +397,18 @@
 
   <main>
     <section class="hero">
-      <div class="container hero__container">
+      <div class="hero__container">
         <div class="hero__content">
-          <h1 class="hero__title">
+          <p class="hero__title">
             Прикоснитесь к прекрасному
-          </h1>
+          </p>
           <p class="hero__descr">
             Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
             предложений.
           </p>
-          <button aria-label="Подписаться на рассылку" class="hero__btn">Подписаться на рассылку</button>
+          <div class="hero__btn-wrap">
+            <button aria-label="Подписаться на рассылку" class="hero__btn">Подписаться на рассылку</button>
+          </div>
         </div>
         <div class="hero__animation animation">
           <picture class="animation__item animation__item--1">
@@ -1011,6 +1024,7 @@
             </li>
           </ul>
         </div>
+
       </div>
     </section>
 

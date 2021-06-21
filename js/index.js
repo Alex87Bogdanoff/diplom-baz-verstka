@@ -12,6 +12,8 @@ button.forEach(el => {
   el.addEventListener('click', (e) => {
     drop.forEach(el => { el.classList.remove(('list-dropdown--active')) })
     e.currentTarget.closest('li').querySelector('.list-dropdown').classList.toggle('list-dropdown--active');
+    button.forEach(el => { el.classList.remove(('list-item__btn--active')) })
+    e.currentTarget.closest('li').querySelector('.list-item__btn').classList.toggle('list-item__btn--active');
   });
 });
 
@@ -19,6 +21,7 @@ document.addEventListener('click', (e) => {
   console.log(e.target)
   if (!e.target.classList.contains('list-dropdown') && !e.target.classList.contains('list-item__btn')) {
     drop.forEach(el => { el.classList.remove(('list-dropdown--active')) })
+    button.forEach(el => { el.classList.remove(('list-item__btn--active')) })
   }
 });
 
@@ -155,3 +158,4 @@ const swiperEvents = new Swiper('.events__swiper', {
   slidesPerColumn: 2,
   slidesPerColumnFill: 'row',
 });
+
