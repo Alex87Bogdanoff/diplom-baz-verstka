@@ -1257,7 +1257,11 @@ header {
 .events__swiper {
   padding: 24px 0 0 3px;
   margin-bottom: 50px;
-  max-width: 1604px;
+  max-width: 100%;
+}
+
+.events__swiper {
+  max-width: 100%;
 }
 
 .events-list__item {
