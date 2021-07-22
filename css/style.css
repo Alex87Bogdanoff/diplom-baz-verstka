@@ -1260,6 +1260,10 @@ header {
   max-width: 1604px;
 }
 
+.events__list {
+  max-width: 1650px;
+}
+
 .events-list__item {
   display: block;
   border: 1px solid #cacaca;
