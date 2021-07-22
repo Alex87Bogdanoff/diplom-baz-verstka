@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /* Слайдер Events */
 const swiperEvents = new Swiper('.events__swiper', {
   cssMode: true,
-  widthStyle: "content",
+  widthStyle: 1650,
 
   speed: 600,
   spaceBetween: 50,
