@@ -27,13 +27,6 @@ document.addEventListener('click', (e) => {
 
 /* Слайдер Gallery */
 const swiperGallery = new Swiper('.gallery__swiper', {
-  speed: 600,
-  spaceBetween: 50,
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  slidesPerColumn: 2,
-  slidesPerColumnFill: 'row',
-
   pagination: {
     el: '.swip__pagination',
     type: 'fraction',
@@ -49,6 +42,13 @@ const swiperGallery = new Swiper('.gallery__swiper', {
     onlyInViewport: true,
     pageUpDown: false,
   },
+
+  speed: 600,
+  spaceBetween: 50,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  slidesPerColumn: 2,
+  slidesPerColumnFill: 'row',
 
   breakpoints: {
     320: {
@@ -110,8 +110,23 @@ $(document).ready(function () {
 
 /* Аккордеон Catalog */
 $(function () {
-  $("#accordion").accordion({
-    collapsible: true
+  $("#italian__accordion").accordion({
+    collapsible: true,
+    heightStyle: "content"
+  });
+});
+
+$(function () {
+  $("#germany__accordion").accordion({
+    collapsible: true,
+    heightStyle: "content"
+  });
+});
+
+$(function () {
+  $("#france__accordion").accordion({
+    collapsible: true,
+    heightStyle: "content"
   });
 });
 
@@ -130,6 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
         tabContent.classList.remove('tabs-country__btn-active')
       })
       document.querySelector(`[data-path="${path}"]`).classList.add('tabs-country__btn-active')
+      $('.accordion').accordion("refresh");
     })
   })
   document.querySelectorAll('.accordion__artist-name').forEach(function (tabsBtn) {
@@ -149,6 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+
 /* Слайдер Events */
 const swiperEvents = new Swiper('.events__swiper', {
   speed: 600,
@@ -159,3 +176,12 @@ const swiperEvents = new Swiper('.events__swiper', {
   slidesPerColumnFill: 'row',
 });
 
+/* Кнопка Events */
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.events__btn').addEventListener('click', function() {
+      document.querySelector('.events-list__item:nth-child(n+4)').classList.toggle('events-active')
+      document.querySelector('.events-list__item:nth-child(n+5)').classList.toggle('events-active')
+      document.querySelector('.events-list__item:nth-child(n+3)').classList.toggle('events-active')
+      document.querySelector('.events__btn').classList.toggle('events__btn-none')
+  })
+})

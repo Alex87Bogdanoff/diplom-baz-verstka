@@ -16,12 +16,12 @@
   <header class="header">
     <div class="header__top-menu top-menu">
       <div class="container top-menu__container">
-        <a aria-label="Логотип художественной галереи Blanchard" class="header__logo logo" href="">
+        <a class="header__logo logo" href="">
           <img src="img/header_img/logo.svg" class="logo__img" alt="Художественная галерея Blanchard">
         </a>
         <nav aria-label="Главное меню" class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link"><nobr>О нас</nobr></a></li>
             <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
             <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
             <li class="nav__item"><a href="#events" class="nav__link">События</a></li>
@@ -30,12 +30,13 @@
             <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
           </ul>
           <a id="private-enter" href="" class="private__enter">
-            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" class="private__arrow" xmlns="http://www.w3.org/2000/svg">
+            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" class="private__arrow"
+              xmlns="http://www.w3.org/2000/svg">
               <path class="private__arrow-path"
                 d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
                 fill="white" />
             </svg>
-            <span>Войти</span>
+            <span class="private__text">Войти</span>
           </a>
         </nav>
       </div>
@@ -397,41 +398,38 @@
 
   <main>
     <section class="hero">
-      <div class="hero__container">
-        <div class="hero__content">
-          <h2 class="hero__title">
-            Прикоснитесь к прекрасному
-          </h2>
-          <p class="hero__descr">
-            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
-            предложений.
-          </p>
-          <div class="hero__btn-wrap">
-            <button aria-label="Подписаться на рассылку" class="hero__btn">Подписаться на рассылку</button>
-          </div>
-        </div>
-        <div class="hero__animation animation">
-          <picture class="animation__item animation__item--1">
-            <source media="(max-width: 320px)" srcset="img/hero_img/slider__item-1--320.jpg">
-            <source media="(max-width: 768px)" srcset="img/hero_img/slider__item-1--768.jpg">
-            <source media="(max-width: 1024px)" srcset="img/hero_img/slider__item-1--1024.jpg">
-            <img src="img/hero_img/slider__item-1.jpg" class="animation__img" alt="">
-          </picture>
-          <picture class="animation__item animation__item--2">
-            <source media="(max-width: 320px)" srcset="img/hero_img/slider__item-2--320.jpg">
-            <source media="(max-width: 768px)" srcset="img/hero_img/slider__item-2--768.jpg">
-            <source media="(max-width: 1024px)" srcset="img/hero_img/slider__item-2--1024.jpg">
-            <img src="img/hero_img/slider__item-2.jpg" class="animation__img" alt="">
-          </picture>
-          <picture class="animation__item animation__item--3">
-            <source media="(max-width: 320px)" srcset="img/hero_img/slider__item-3--320.jpg">
-            <source media="(max-width: 768px)" srcset="img/hero_img/slider__item-3--768.jpg">
-            <source media="(max-width: 1024px)" srcset="img/hero_img/slider__item-3--1024.jpg">
-            <img src="img/hero_img/slider__item-3.jpg" class="animation__img" alt="">
-          </picture>
-        </div>
+      <div class="hero__container container">
+        <h2 class="hero__title">
+          Прикоснитесь к прекрасному
+        </h2>
+        <p class="hero__descr">
+          Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
+          предложений.
+        </p>
+        <button aria-label="Подписаться на рассылку" class="hero__btn">Подписаться на рассылку</button>
+      </div>
+      <div class="hero__animation animation">
+        <picture class="animation__item animation__item--1">
+          <source media="(max-width: 320px)" srcset="img/hero_img/slider__item-1--320.jpg">
+          <source media="(max-width: 768px)" srcset="img/hero_img/slider__item-1--768.jpg">
+          <source media="(max-width: 1024px)" srcset="img/hero_img/slider__item-1--1024.jpg">
+          <img src="img/hero_img/slider__item-1.jpg" class="animation__img" alt="">
+        </picture>
+        <picture class="animation__item animation__item--2">
+          <source media="(max-width: 320px)" srcset="img/hero_img/slider__item-2--320.jpg">
+          <source media="(max-width: 768px)" srcset="img/hero_img/slider__item-2--768.jpg">
+          <source media="(max-width: 1024px)" srcset="img/hero_img/slider__item-2--1024.jpg">
+          <img src="img/hero_img/slider__item-2.jpg" class="animation__img" alt="">
+        </picture>
+        <picture class="animation__item animation__item--3">
+          <source media="(max-width: 320px)" srcset="img/hero_img/slider__item-3--320.jpg">
+          <source media="(max-width: 768px)" srcset="img/hero_img/slider__item-3--768.jpg">
+          <source media="(max-width: 1024px)" srcset="img/hero_img/slider__item-3--1024.jpg">
+          <img src="img/hero_img/slider__item-3.jpg" class="animation__img" alt="">
+        </picture>
       </div>
     </section>
+
     <section class="about">
       <div class="container about__container">
         <h2 id="about" class="about__title title">О нас</h2>
@@ -451,14 +449,16 @@
     <section class="gallery">
       <div class="container gallery__container">
         <div class="gallery__left">
-          <h2 id="gallery" class="gallery__title title">Галерея</h2>
-          <div class="gallery__filter">
-            <p class="gallery__filter-descr">Фильтровать по:</p>
-            <select name="select" class="gallery__select">
-              <option selected value="Автор">Автор</option>
-              <option value="Направление">Направление</option>
-              <option value="Техника">Техника</option>
-            </select>
+          <div class="gallery__left-top">
+            <h2 id="gallery" class="gallery__title title">Галерея</h2>
+            <div class="gallery__filter">
+              <p class="gallery__filter-descr">Фильтр:</p>
+              <select name="select" class="gallery__select">
+                <option selected value="Живопись">Живопись</option>
+                <option value="Рисунок">Рисунок</option>
+                <option value="Скульптура">Скульптура</option>
+              </select>
+            </div>
           </div>
           <p class="gallery__descr">
             Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#private-enter"
@@ -467,9 +467,11 @@
         </div>
         <div class="gallery__right">
           <div class="swiper-container gallery__swiper swip">
-            <button class="swiper-button-prev swip__btn-prev"></button>
-            <button class="swiper-button-next swip__btn-next"></button>
-            <div class="swiper-pagination swip__pagination"></div>
+            <div class="swip__pagination-btn">
+              <button class="swiper-button-prev swip__btn-prev"></button>
+              <span class="swiper-pagination swip__pagination"></span>
+              <button class="swiper-button-next swip__btn-next"></button>
+            </div>
             <div class="swiper-wrapper swip__wrapper">
               <picture data-path="box_1" class="swiper-slide swip__slide slide-hover">
                 <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-1--320.jpg">
@@ -656,90 +658,6 @@
             </div>
           </div>
         </div>
-        <div id="gallery__modal"></div>
-        <div id="box_1" class="gallery__modal modal">
-          <div class="modal__item">
-            <img src="img/gallery_img/swip__slide-1--click.jpg"
-              alt="Картина: “Торс (Фигура с розовым лицом)”, автор: Казимир Малевич">
-            <div class="modal__text">
-              <p class="modal__text-artist">Казимир Малевич</p>
-              <p class="modal__text-picture">“Торс (Фигура с розовым лицом)”</p>
-              <p class="modal__text-years">1928-1929</p>
-              <p class="modal__text-desc">Продолжая идеи супрематизации человеческого образа Малевич создает эту
-                картину, на которой изображен обезличенный торс, который больше напоминает манекен портного.</p>
-              <div class="modal__btn"></div>
-            </div>
-          </div>
-        </div>
-        <div id="box_2" class="gallery__modal modal">
-          <div class="modal__item">
-            <img src="img/gallery_img/swip__slide-2--click.jpg" alt="Картина: “Кубики”, автор: Казимир Малевич">
-            <div class="modal__text">
-              <p class="modal__text-artist">Казимир Малевич</p>
-              <p class="modal__text-picture">“Кубики”</p>
-              <p class="modal__text-years">1930-1931</p>
-              <p class="modal__text-desc">Любимая с дества игра в кубики не оставляла Казимира и в зрелом возрасте.
-              </p>
-              <div class="modal__btn"></div>
-            </div>
-          </div>
-        </div>
-        <div id="box_3" class="gallery__modal modal">
-          <div class="modal__item">
-            <img src="img/gallery_img/swip__slide-3--click.jpg"
-              alt="Картина: “Женщина с граблями”, автор: Казимир Малевич">
-            <div class="modal__text">
-              <p class="modal__text-artist">Казимир Малевич</p>
-              <p class="modal__text-picture">“Женщина с граблями”</p>
-              <p class="modal__text-years">1931-1932</p>
-              <p class="modal__text-desc">Картина из второй серии крестьянского цикла работ Казимира Малевича.
-                Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после
-                Берлинской и Варшавской выставок в 1927 году.</p>
-              <div class="modal__btn"></div>
-            </div>
-          </div>
-        </div>
-        <div id="box_4" class="gallery__modal modal">
-          <div class="modal__item">
-            <img src="img/gallery_img/swip__slide-4--click.jpg"
-              alt="Картина: “Женщина с вёдрами”, автор: Казимир Малевич">
-            <div class="modal__text">
-              <p class="modal__text-artist">Казимир Малевич</p>
-              <p class="modal__text-picture">“Женщина с вёдрами”</p>
-              <p class="modal__text-years">1912</p>
-              <p class="modal__text-desc">Картина из второй серии крестьянского цикла работ Казимира Малевича.
-                Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после
-                Берлинской и Варшавской выставок в 1927 году.</p>
-              <button class="modal__btn"></button>
-            </div>
-          </div>
-        </div>
-        <div id="box_5" class="gallery__modal modal"></div>
-        <div id="box_6" class="gallery__modal modal"></div>
-        <div id="box_7" class="gallery__modal modal"></div>
-        <div id="box_8" class="gallery__modal modal"></div>
-        <div id="box_9" class="gallery__modal modal"></div>
-        <div id="box_10" class="gallery__modal modal"></div>
-        <div id="box_11" class="gallery__modal modal"></div>
-        <div id="box_12" class="gallery__modal modal"></div>
-        <div id="box_13" class="gallery__modal modal"></div>
-        <div id="box_14" class="gallery__modal modal"></div>
-        <div id="box_15" class="gallery__modal modal"></div>
-        <div id="box_16" class="gallery__modal modal"></div>
-        <div id="box_17" class="gallery__modal modal"></div>
-        <div id="box_18" class="gallery__modal modal"></div>
-        <div id="box_19" class="gallery__modal modal"></div>
-        <div id="box_20" class="gallery__modal modal"></div>
-        <div id="box_21" class="gallery__modal modal"></div>
-        <div id="box_22" class="gallery__modal modal"></div>
-        <div id="box_23" class="gallery__modal modal"></div>
-        <div id="box_24" class="gallery__modal modal"></div>
-        <div id="box_25" class="gallery__modal modal"></div>
-        <div id="box_26" class="gallery__modal modal"></div>
-        <div id="box_27" class="gallery__modal modal"></div>
-        <div id="box_28" class="gallery__modal modal"></div>
-        <div id="box_29" class="gallery__modal modal"></div>
-        <div id="box_30" class="gallery__modal modal"></div>
       </div>
     </section>
 
@@ -831,11 +749,943 @@
           частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
           уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
         </p>
-        <div class="tabs__item" data-target="one"></div>
-        <div class="tabs__item" data-target="two"></div>
+        <div class="tabs__item" data-target="one">
+          <div class="tabs__left">
+            <div class="artist__item" data-target="france one">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france two">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france three">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france four">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france five">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france six">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france seven">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france eight">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france nine">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france ten">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france eleven">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item artist__item-active" data-target="france twelve">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/marmion--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/marmion--768.jpg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/marmion--1024.jpg">
+                <img src="img/catalog_img/marmion.jpg"
+                  alt="Аббат Гийом Фийастр преподносит манускрипт хроник герцогу Бургундскому">
+              </picture>
+              <p class="artist__name">Симо́н Мармио́н</p>
+              <p class="artist__years">ок. 1425 — 15 декабря 1489</p>
+              <p class="artist__biography">Симо́н Мармио́н — художник и иллюстратор, работавший в Северной Франции и
+                Фландрии.</p>
+            </div>
+            <div class="artist__item" data-target="france thirteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france foutrteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france fiveteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france sixteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france seventeen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france eighteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france nineteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france twenty">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france twenty one">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france twenty two">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france twenty three">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france twenty four">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="france twenty five">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+          </div>
+          <div class="tabs__right tabs-right">
+            <div id="france__accordion" class="tabs-right__accordion accordion">
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1400 по 1499 гг.</p>
+              </div>
+              <div class="accordion__descr">
+                <button class="accordion__artist-name" data-path="france one">Абидаль, Эрик</button>
+                <br><button class="accordion__artist-name" data-path="france two">Анелька, Николя</button>
+                <br><button class="accordion__artist-name" data-path="france three">Анри, Тьери</button>
+                <br><button class="accordion__artist-name" data-path="france four">Бензема, Карим</button>
+                <br><button class="accordion__artist-name" data-path="france five">Бартез, Фабьен</button>
+                <br><button class="accordion__artist-name" data-path="france six">Блан, Лоран</button>
+                <br><button class="accordion__artist-name" data-path="france seven">Вийера, Патрик</button>
+                <br><button class="accordion__artist-name" data-path="france eight">Вильтор, Сильвен</button>
+                <br><button class="accordion__artist-name" data-path="france nine">Дешам, Дидье</button>
+                <br><button class="accordion__artist-name" data-path="france ten">Карамбе, Кристиан</button>
+                <br><button class="accordion__artist-name" data-path="france eleven">Льорис, Уго</button>
+                <br><button class="accordion__artist-name accordion__artist-name-active"
+                  data-path="france twelve">Мармио́н, Симо́н
+                </button>
+                <br><button class="accordion__artist-name" data-path="france thirteen">Мику, Йохан</button>
+                <br><button class="accordion__artist-name" data-path="france foutrteen">Павар, Бенжамен</button>
+                <br><button class="accordion__artist-name" data-path="france fiveteen">Пайет, Димитри</button>
+                <br><button class="accordion__artist-name" data-path="france sixteen">Папен, Жан-Пьер</button>
+                <br><button class="accordion__artist-name" data-path="france seventeen">Рабьо, Адриан</button>
+                <br><button class="accordion__artist-name" data-path="france eighteen">Рибери, Франк</button>
+                <br><button class="accordion__artist-name" data-path="france nineteen">Робер, Лоран</button>
+                <br><button class="accordion__artist-name" data-path="france twenty">Санья, Бакари</button>
+                <br><button class="accordion__artist-name" data-path="france twenty one">Сильвестр, Микаэль</button>
+                <br><button class="accordion__artist-name" data-path="france twenty two">Сиссе, Джибриль</button>
+                <br><button class="accordion__artist-name" data-path="france twenty three">Сиссоко, Мусса</button>
+                <br><button class="accordion__artist-name" data-path="france twenty four">Тигана, Жан</button>
+                <br><button class="accordion__artist-name" data-path="france twenty five">Эвра, Патрис</button>
+              </div>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1500 по 1599 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1600 по 1699 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1700 по 1799 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1800 по 1899 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1900 по 1999 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 2000 г.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="tabs__item" data-target="two">
+          <div class="tabs__left">
+            <div class="artist__item" data-target="germany one">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany two">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany three">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany four">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany five">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany six">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany seven">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany eight">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany nine">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany ten">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany eleven">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item artist__item-active" data-target="germany twelve">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/durer--320.jpg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/durer--768.jpg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/durer--1024.jpg">
+                <img src="img/catalog_img/durer.jpg" alt="Портрет Альбрехт Дюрер">
+              </picture>
+              <p class="artist__name">А́льбрехт Дю́рер</p>
+              <p class="artist__years">21 мая 1471 — 6 апреля 1528</p>
+              <p class="artist__biography">А́льбрехт Дю́рер — немецкий живописец, гравёр и график, один из величайших
+                мастеров западноевропейского Ренессанса. Признан крупнейшим европейским мастером ксилографии, поднявшим
+                её на уровень настоящего искусства. Первый теоретик искусства среди североевропейских художников, автор
+                практического руководства по изобразительному и декоративно-прикладному искусству на немецком языке,
+                пропагандировавший необходимость разностороннего развития художников. Основоположник сравнительной
+                антропометрии. Помимо перечисленного оставил заметный след в военно-инженерном деле разработкой теории
+                фортификации. Первый из европейских художников, написавший автобиографию.</p>
+            </div>
+            <div class="artist__item" data-target="germany thirteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany foutrteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany fiveteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany sixteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany seventeen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany eighteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany nineteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany twenty">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany twenty one">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany twenty two">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany twenty three">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany twenty four">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="germany twenty five">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+          </div>
+          <div class="tabs__right tabs-right">
+            <div id="germany__accordion" class="tabs-right__accordion accordion">
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1400 по 1499 гг.</p>
+              </div>
+              <div class="accordion__descr">
+                <button class="accordion__artist-name" data-path="germany one">Айльтс, Дитер</button>
+                <br><button class="accordion__artist-name" data-path="germany two">Баббель, Маркус</button>
+                <br><button class="accordion__artist-name" data-path="germany three">Бадштубер, Хольгер</button>
+                <br><button class="accordion__artist-name" data-path="germany four">Баллак, Михаэль</button>
+                <br><button class="accordion__artist-name" data-path="germany five">Баслер, Марио</button>
+                <br><button class="accordion__artist-name" data-path="germany six">Бирхофф, Оливер</button>
+                <br><button class="accordion__artist-name" data-path="germany seven">Бобич, Фреди</button>
+                <br><button class="accordion__artist-name" data-path="germany eight">Брандт, Юлиан</button>
+                <br><button class="accordion__artist-name" data-path="germany nine">Вагнер, Сандро</button>
+                <br><button class="accordion__artist-name" data-path="germany ten">Вернер, Тимо</button>
+                <br><button class="accordion__artist-name" data-path="germany eleven">Визе, Тим</button>
+                <br><button class="accordion__artist-name accordion__artist-name-active"
+                  data-path="germany twelve">Дюрер, Альбрехт
+                </button>
+                <br><button class="accordion__artist-name" data-path="germany thirteen">Заммер, Матиас</button>
+                <br><button class="accordion__artist-name" data-path="germany foutrteen">Зане, Лерой</button>
+                <br><button class="accordion__artist-name" data-path="germany fiveteen">Зюле, Никлас</button>
+                <br><button class="accordion__artist-name" data-path="germany sixteen">Йеремис, Йенс</button>
+                <br><button class="accordion__artist-name" data-path="germany seventeen">Кан, Оливер</button>
+                <br><button class="accordion__artist-name" data-path="germany eighteen">Киммих, Йозуа</button>
+                <br><button class="accordion__artist-name" data-path="germany nineteen">Клозе, Мирослав</button>
+                <br><button class="accordion__artist-name" data-path="germany twenty">Кроос, Тони</button>
+                <br><button class="accordion__artist-name" data-path="germany twenty one">Лёв, Йоахим</button>
+                <br><button class="accordion__artist-name" data-path="germany twenty two">Леманн, Йенс</button>
+                <br><button class="accordion__artist-name" data-path="germany twenty three">Мюллер, Томас</button>
+                <br><button class="accordion__artist-name" data-path="germany twenty four">Нойер, Мануэль</button>
+                <br><button class="accordion__artist-name" data-path="germany twenty five">Швайнштайгер,
+                  Бастиан</button>
+              </div>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1500 по 1599 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1600 по 1699 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1700 по 1799 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1800 по 1899 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1900 по 1999 гг.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 2000 г.</p>
+              </div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="tabs__item tabs__item-active" data-target="three">
           <div class="tabs__left">
-            <div class="artist__item artist__item-active" data-target="twelve">
+            <div class="artist__item" data-target="italian one">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian two">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian three">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian four">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian five">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian six">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian seven">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian eight">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian nine">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian ten">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian eleven">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item artist__item-active" data-target="italian twelve">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/domenico--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/catalog_img/domenico--768.jpg">
@@ -852,7 +1702,139 @@
                 выступают
                 знатные граждане Флоренции в костюмах того времени).</p>
             </div>
-            <div class="artist__item" data-target="twenty five">
+            <div class="artist__item" data-target="italian thirteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian foutrteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian fiveteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian sixteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian seventeen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian eighteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian nineteen">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian twenty">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian twenty one">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian twenty two">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian twenty three">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian twenty four">
+              <picture class="artist__picture">
+                <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
+                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 1400px)" srcset="img/catalog_img/anonymous--1024.svg">
+                <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
+              </picture>
+              <p class="artist__name">Что мы о нём знаем?</p>
+              <p class="artist__biography">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a href="gallery" class="artist__link plug__link">В галерею</a>
+            </div>
+            <div class="artist__item" data-target="italian twenty five">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/stark--320.jpg">
                 <source media="(max-width: 768px)" srcset="img/catalog_img/stark--768.jpg">
@@ -872,63 +1854,175 @@
             </div>
           </div>
           <div class="tabs__right tabs-right">
-            <div id="accordion" class="tabs-right__accordion accordion">
-              <button class="accordion__btn accordion__item">
-                С 1400 по 1499 гг.
-              </button>
+            <div id="italian__accordion" class="tabs-right__accordion accordion">
+              <div class="accordion__btn accordion__item">
+                <p class="accordion__heading">С 1400 по 1499 гг.</p>
+              </div>
               <div class="accordion__descr">
-                <button class="accordion__artist-name" data-path="one">Бенедетто ди Биндо</button>
-                <br><button class="accordion__artist-name" data-path="two">Бергоньоне, Амброджо</button>
-                <br><button class="accordion__artist-name" data-path="three">Биссоло, Франческо</button>
-                <br><button class="accordion__artist-name" data-path="four">Больтраффио, Джованни</button>
-                <br><button class="accordion__artist-name" data-path="five">Бонсиньори, Франческо</button>
-                <br><button class="accordion__artist-name" data-path="six">Боттичини, Рафаэлло</button>
-                <br><button class="accordion__artist-name" data-path="seven">Брамантино</button>
-                <br><button class="accordion__artist-name" data-path="eight">Бреа, Людовико</button>
-                <br><button class="accordion__artist-name" data-path="nine">Бьяджо д’Антонио Туччи</button>
-                <br><button class="accordion__artist-name" data-path="ten">Веккьетта</button>
-                <br><button class="accordion__artist-name" data-path="eleven">Андреа Верроккьо</button>
-                <br><button class="accordion__artist-name accordion__artist-name-active" data-path="twelve">Доменико
+                <button class="accordion__artist-name" data-path="italian one">Бенедетто ди Биндо</button>
+                <br><button class="accordion__artist-name" data-path="italian two">Бергоньоне, Амброджо</button>
+                <br><button class="accordion__artist-name" data-path="italian three">Биссоло, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="italian four">Больтраффио, Джованни</button>
+                <br><button class="accordion__artist-name" data-path="italian five">Бонсиньори, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="italian six">Боттичини, Рафаэлло</button>
+                <br><button class="accordion__artist-name" data-path="italian seven">Брамантино</button>
+                <br><button class="accordion__artist-name" data-path="italian eight">Бреа, Людовико</button>
+                <br><button class="accordion__artist-name" data-path="italian nine">Бьяджо д’Антонио Туччи</button>
+                <br><button class="accordion__artist-name" data-path="italian ten">Веккьетта</button>
+                <br><button class="accordion__artist-name" data-path="italian eleven">Андреа Верроккьо</button>
+                <br><button class="accordion__artist-name accordion__artist-name-active"
+                  data-path="italian twelve">Доменико
                   Гирландайо
                 </button>
-                <br><button class="accordion__artist-name" data-path="thirteen">Беноццо Гоццоли</button>
-                <br><button class="accordion__artist-name" data-path="foutrteen">Граначчи, Франческо</button>
-                <br><button class="accordion__artist-name" data-path="fiveteen">Грегорио ди Чекко</button>
-                <br><button class="accordion__artist-name" data-path="sixteen">Джованни да Удине</button>
-                <br><button class="accordion__artist-name" data-path="seventeen">Джованни ди Паоло</button>
-                <br><button class="accordion__artist-name" data-path="eighteen">Джорджоне</button>
-                <br><button class="accordion__artist-name" data-path="nineteen">Парентино, Бернардо</button>
-                <br><button class="accordion__artist-name" data-path="twenty">Пезеллино</button>
-                <br><button class="accordion__artist-name" data-path="twenty one">Пьетро Перуджино</button>
-                <br><button class="accordion__artist-name" data-path="twenty two">Перуцци, Бальдассаре</button>
-                <br><button class="accordion__artist-name" data-path="twenty three">Пизанелло</button>
-                <br><button class="accordion__artist-name" data-path="twenty four">Пинтуриккьо</button>
-                <br><button class="accordion__artist-name" data-path="twenty five">Тони Старк</button>
+                <br><button class="accordion__artist-name" data-path="italian thirteen">Беноццо Гоццоли</button>
+                <br><button class="accordion__artist-name" data-path="italian foutrteen">Граначчи, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="italian fiveteen">Грегорио ди Чекко</button>
+                <br><button class="accordion__artist-name" data-path="italian sixteen">Джованни да Удине</button>
+                <br><button class="accordion__artist-name" data-path="italian seventeen">Джованни ди Паоло</button>
+                <br><button class="accordion__artist-name" data-path="italian eighteen">Джорджоне</button>
+                <br><button class="accordion__artist-name" data-path="italian nineteen">Парентино, Бернардо</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty">Пезеллино</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty one">Пьетро Перуджино</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty two">Перуцци, Бальдассаре</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty three">Пизанелло</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty four">Пинтуриккьо</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty five">Тони Старк</button>
               </div>
               <div class="accordion__btn accordion__item">
                 <p class="accordion__heading">С 1500 по 1599 гг.</p>
               </div>
-              <div class="accordion__descr"></div>
+              <div class="accordion__descr">
+                <button class="accordion__artist-name" data-path="italian one">Бенедетто ди Биндо</button>
+                <br><button class="accordion__artist-name" data-path="italian two">Бергоньоне, Амброджо</button>
+                <br><button class="accordion__artist-name" data-path="italian three">Биссоло, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="italian four">Больтраффио, Джованни</button>
+                <br><button class="accordion__artist-name" data-path="italian five">Бонсиньори, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="italian six">Боттичини, Рафаэлло</button>
+                <br><button class="accordion__artist-name" data-path="italian seven">Брамантино</button>
+                <br><button class="accordion__artist-name" data-path="italian eight">Бреа, Людовико</button>
+                <br><button class="accordion__artist-name" data-path="italian nine">Бьяджо д’Антонио Туччи</button>
+                <br><button class="accordion__artist-name" data-path="italian ten">Веккьетта</button>
+                <br><button class="accordion__artist-name" data-path="italian eleven">Андреа Верроккьо</button>
+                <br><button class="accordion__artist-name accordion__artist-name-active"
+                  data-path="italian twelve">Доменико
+                  Гирландайо
+                </button>
+                <br><button class="accordion__artist-name" data-path="italian thirteen">Беноццо Гоццоли</button>
+                <br><button class="accordion__artist-name" data-path="italian foutrteen">Граначчи, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="italian fiveteen">Грегорио ди Чекко</button>
+                <br><button class="accordion__artist-name" data-path="italian sixteen">Джованни да Удине</button>
+                <br><button class="accordion__artist-name" data-path="italian seventeen">Джованни ди Паоло</button>
+                <br><button class="accordion__artist-name" data-path="italian eighteen">Джорджоне</button>
+                <br><button class="accordion__artist-name" data-path="italian nineteen">Парентино, Бернардо</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty">Пезеллино</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty one">Пьетро Перуджино</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty two">Перуцци, Бальдассаре</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty three">Пизанелло</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty four">Пинтуриккьо</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty five">Тони Старк</button>
+                <button class="accordion__artist-name" data-path="italian one">Бенедетто ди Биндо</button>
+                <br><button class="accordion__artist-name" data-path="italian two">Бергоньоне, Амброджо</button>
+                <br><button class="accordion__artist-name" data-path="italian three">Биссоло, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="italian four">Больтраффио, Джованни</button>
+                <br><button class="accordion__artist-name" data-path="italian five">Бонсиньори, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="italian six">Боттичини, Рафаэлло</button>
+                <br><button class="accordion__artist-name" data-path="italian seven">Брамантино</button>
+                <br><button class="accordion__artist-name" data-path="italian eight">Бреа, Людовико</button>
+                <br><button class="accordion__artist-name" data-path="italian nine">Бьяджо д’Антонио Туччи</button>
+                <br><button class="accordion__artist-name" data-path="italian ten">Веккьетта</button>
+                <br><button class="accordion__artist-name" data-path="italian eleven">Андреа Верроккьо</button>
+                <br><button class="accordion__artist-name" data-path="italian twelve">Доменико
+                  Гирландайо
+                </button>
+                <br><button class="accordion__artist-name" data-path="italian thirteen">Беноццо Гоццоли</button>
+                <br><button class="accordion__artist-name" data-path="italian foutrteen">Граначчи, Франческо</button>
+                <br><button class="accordion__artist-name" data-path="italian fiveteen">Грегорио ди Чекко</button>
+                <br><button class="accordion__artist-name" data-path="italian sixteen">Джованни да Удине</button>
+                <br><button class="accordion__artist-name" data-path="italian seventeen">Джованни ди Паоло</button>
+                <br><button class="accordion__artist-name" data-path="italian eighteen">Джорджоне</button>
+                <br><button class="accordion__artist-name" data-path="italian nineteen">Парентино, Бернардо</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty">Пезеллино</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty one">Пьетро Перуджино</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty two">Перуцци, Бальдассаре</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty three">Пизанелло</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty four">Пинтуриккьо</button>
+                <br><button class="accordion__artist-name" data-path="italian twenty five">Тони Старк</button>
+              </div>
               <div class="accordion__btn accordion__item">
                 <p class="accordion__heading">С 1600 по 1699 гг.</p>
               </div>
-              <div class="accordion__descr"></div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
               <div class="accordion__btn accordion__item">
                 <p class="accordion__heading">С 1700 по 1799 гг.</p>
               </div>
-              <div class="accordion__descr"></div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
               <div class="accordion__btn accordion__item">
                 <p class="accordion__heading">С 1800 по 1899 гг.</p>
               </div>
-              <div class="accordion__descr"></div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
               <div class="accordion__btn accordion__item">
                 <p class="accordion__heading">С 1900 по 1999 гг.</p>
               </div>
-              <div class="accordion__descr"></div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
               <div class="accordion__btn accordion__item">
                 <p class="accordion__heading">С 2000 г.</p>
               </div>
-              <div class="accordion__descr"></div>
+              <div class="ui-accordion-content accordion__descr--plug plug">
+                <div class="plug__wrap">
+                  <div class="plug__square"></div>
+                  <span class="plug__text">
+                    <p class="plug__heading">Здесь пока пусто</p>
+                    <p class="plug__descr">
+                      А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#gallery" class="plug__link">В галерею</a>
+                  </span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -1023,12 +2117,103 @@
               </div>
             </li>
           </ul>
+          <div class="events__panigation swiper-pagination"></div>
         </div>
+        <button class="events__btn">Все события</button>
 
       </div>
     </section>
 
   </main>
+
+  <footer>
+
+  </footer>
+
+  <div class="modal">
+    <div id="gallery__modal"></div>
+    <div id="box_1" class="modal__gallery">
+      <div class="modal__item">
+        <img src="img/gallery_img/swip__slide-1--click.jpg"
+          alt="Картина: “Торс (Фигура с розовым лицом)”, автор: Казимир Малевич">
+        <div class="modal__text">
+          <p class="modal__text-artist">Казимир Малевич</p>
+          <p class="modal__text-picture">“Торс (Фигура с розовым лицом)”</p>
+          <p class="modal__text-years">1928-1929</p>
+          <p class="modal__text-desc">Продолжая идеи супрематизации человеческого образа Малевич создает эту
+            картину, на которой изображен обезличенный торс, который больше напоминает манекен портного.</p>
+          <div class="modal__btn"></div>
+        </div>
+      </div>
+    </div>
+    <div id="box_2" class="modal__gallery">
+      <div class="modal__item">
+        <img src="img/gallery_img/swip__slide-2--click.jpg" alt="Картина: “Кубики”, автор: Казимир Малевич">
+        <div class="modal__text">
+          <p class="modal__text-artist">Казимир Малевич</p>
+          <p class="modal__text-picture">“Кубики”</p>
+          <p class="modal__text-years">1930-1931</p>
+          <p class="modal__text-desc">Любимая с дества игра в кубики не оставляла Казимира и в зрелом возрасте.
+          </p>
+          <div class="modal__btn"></div>
+        </div>
+      </div>
+    </div>
+    <div id="box_3" class="modal__gallery">
+      <div class="modal__item">
+        <img src="img/gallery_img/swip__slide-3--click.jpg" alt="Картина: “Женщина с граблями”, автор: Казимир Малевич">
+        <div class="modal__text">
+          <p class="modal__text-artist">Казимир Малевич</p>
+          <p class="modal__text-picture">“Женщина с граблями”</p>
+          <p class="modal__text-years">1931-1932</p>
+          <p class="modal__text-desc">Картина из второй серии крестьянского цикла работ Казимира Малевича.
+            Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после
+            Берлинской и Варшавской выставок в 1927 году.</p>
+          <div class="modal__btn"></div>
+        </div>
+      </div>
+    </div>
+    <div id="box_4" class="modal__gallery">
+      <div class="modal__item">
+        <img src="img/gallery_img/swip__slide-4--click.jpg" alt="Картина: “Женщина с вёдрами”, автор: Казимир Малевич">
+        <div class="modal__text">
+          <p class="modal__text-artist">Казимир Малевич</p>
+          <p class="modal__text-picture">“Женщина с вёдрами”</p>
+          <p class="modal__text-years">1912</p>
+          <p class="modal__text-desc">Картина из второй серии крестьянского цикла работ Казимира Малевича.
+            Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после
+            Берлинской и Варшавской выставок в 1927 году.</p>
+          <button class="modal__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div id="box_5" class="modal__gallery"></div>
+    <div id="box_6" class="modal__gallery"></div>
+    <div id="box_7" class="modal__gallery"></div>
+    <div id="box_8" class="modal__gallery"></div>
+    <div id="box_9" class="modal__gallery"></div>
+    <div id="box_10" class="modal__gallery"></div>
+    <div id="box_11" class="modal__gallery"></div>
+    <div id="box_12" class="modal__gallery"></div>
+    <div id="box_13" class="modal__gallery"></div>
+    <div id="box_14" class="modal__gallery"></div>
+    <div id="box_15" class="modal__gallery"></div>
+    <div id="box_16" class="modal__gallery"></div>
+    <div id="box_17" class="modal__gallery"></div>
+    <div id="box_18" class="modal__gallery"></div>
+    <div id="box_19" class="modal__gallery"></div>
+    <div id="box_20" class="modal__gallery"></div>
+    <div id="box_21" class="modal__gallery"></div>
+    <div id="box_22" class="modal__gallery"></div>
+    <div id="box_23" class="modal__gallery"></div>
+    <div id="box_24" class="modal__gallery"></div>
+    <div id="box_25" class="modal__gallery"></div>
+    <div id="box_26" class="modal__gallery"></div>
+    <div id="box_27" class="modal__gallery"></div>
+    <div id="box_28" class="modal__gallery"></div>
+    <div id="box_29" class="modal__gallery"></div>
+    <div id="box_30" class="modal__gallery"></div>
+  </div>
 
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
