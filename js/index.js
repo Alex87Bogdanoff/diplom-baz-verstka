@@ -168,6 +168,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* Слайдер Events */
 const swiperEvents = new Swiper('.events__swiper', {
+  cssMode: true,
+  wudthStyle: "content",
+
   speed: 600,
   spaceBetween: 50,
   slidesPerView: 3,
