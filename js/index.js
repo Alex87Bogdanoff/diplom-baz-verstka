@@ -165,20 +165,6 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
-
-/* Слайдер Events */
-const swiperEvents = new Swiper('.events__swiper', {
-  cssMode: true,
-  widthStyle: 1650,
-
-  speed: 600,
-  spaceBetween: 50,
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  slidesPerColumn: 2,
-  slidesPerColumnFill: 'row',
-});
-
 /* Кнопка Events */
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.events__btn').addEventListener('click', function() {
