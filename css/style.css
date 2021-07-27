@@ -1378,7 +1378,7 @@ header {
 .publishes__categories {
   display: flex;
   flex-direction: column;
-  margin-right: 163px;
+  margin-right: 173px;
 }
 
 .publishes__title {
@@ -1507,28 +1507,23 @@ header {
 .publishes__wrapper {
   max-width: 1150px;
   padding-top: 24px;
-  padding-left: 10px;
 }
 
 .publishes__pagination-btn {
   display: flex;
-  padding: 5px 0px 5px 10px;
-}
-
-.publishes__slide {
-  display: block;
+  padding: 5px 0px;
 }
 
 .book__descr {
   display: flex;
   flex-direction: column;
   padding: 24px 0px;
-  max-width: 350px;
 }
 
 .book__heading-price {
   display: flex;
   justify-content: space-between;
+  padding-right: 2px;
   margin-bottom: 5px;
 }
 
