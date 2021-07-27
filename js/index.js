@@ -174,3 +174,55 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.events__btn').classList.toggle('events__btn-none')
   })
 })
+
+/* Слайдер Publishes */
+const publishesSwiper = new Swiper('.publishes__swiper-container', {
+  pagination: {
+    el: '.publishes__swiper-pagination',
+    type: 'fraction',
+  },
+
+  navigation: {
+    nextEl: '.publishes__swiper-button-next',
+    prevEl: '.publishes__swiper-button-prev',
+  },
+
+  keyboard: {
+    enable: true,
+    onlyInViewport: true,
+    pageUpDown: false,
+  },
+
+  speed: 600,
+  spaceBetween: 50,
+  slidesPerView: 3,
+  slidesPerGroup: 2,
+
+
+  breakpoints: {
+
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+      slidesPerGroup: 2,
+    },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+      slidesPerGroup: 2,
+    },
+
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 49,
+      slidesPerGroup: 2,
+    },
+
+    1920: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 2,
+    },
+  }
+});
