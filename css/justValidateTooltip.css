@@ -1,0 +1,35 @@
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 1; } }
+
+.just-validate-tooltip-container {
+  position: relative; 
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.just-validate-tooltip-hide {
+  -webkit-animation: fadeOut .4s linear;
+          animation: fadeOut .4s linear;
+  opacity: 1; 
+}
+
+.js-validate-error-label {
+  z-index: 10;
+  background: none;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 400;
+  pointer-events: none;
+  transition: all .4s linear; 
+}
+

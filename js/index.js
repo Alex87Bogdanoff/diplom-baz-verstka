@@ -226,3 +226,143 @@ const publishesSwiper = new Swiper('.publishes__swiper-container', {
     },
   }
 });
+
+
+/* Слайдер Projects */
+const projectsSwiper = new Swiper('.projects__swiper-container', {
+
+  navigation: {
+        nextEl: '.projects__swiper-button-next',
+        prevEl: '.projects__swiper-button-prev',
+  },
+
+  keyboard: {
+    enable: true,
+    onlyInViewport: true,
+    pageUpDown: false,
+  },
+
+  speed: 600,
+  spaceBetween: 50,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+
+
+  breakpoints: {
+    540: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        slidesPerGroup: 2,
+    },
+    768: {
+        slidesPerView: 2,
+        spaceBetween: 34,
+        slidesPerGroup: 2,
+    },
+    1024: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+        slidesPerGroup: 2,
+    },
+    1900: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
+    }
+  }
+});
+
+/* Tooltips Projects */
+tippy('#tooltip-one', {
+  content: 'Пример современных тенденций - современная методология разработки',
+});
+tippy('#tooltip-two', {
+  content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+});
+tippy('#tooltip-three', {
+  content: 'В стремлении повысить качество',
+});
+
+/* Карта Contacts */
+ymaps.ready(init);
+function init(){
+  var myMap = new ymaps.Map("map", {
+    center: [55.758468, 37.621088],
+    zoom: 14,
+    controls:  []
+  });
+
+  var zoomControl = new ymaps.control.ZoomControl({
+    options: {
+      size: "small",
+      position: {
+        left: 'auto',
+        right: 10,
+        top: 265
+      }
+    }
+  });
+  myMap.controls.add(zoomControl);
+
+  var GeolocationControl = new ymaps.control.GeolocationControl({
+    options: {
+      position: {
+        left: 'auto',
+        right: 10,
+        top: 360
+      }
+    }
+  });
+  myMap.controls.add(GeolocationControl);
+
+  var myGeoObject = new ymaps.GeoObject({
+    geometry: {
+      type: "Point"
+    }
+  });
+
+  var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '../img/contacts_img/maps-icon.svg',
+    iconImageSize: [20, 20],
+    iconImageOffset: [20, 20]
+  });
+
+  myMap.geoObjects.add(myGeoObject);
+  myMap.geoObjects.add(myPlacemark);
+}
+
+/* Форма Contacts */
+var selector = document.querySelector("input[type='tel']");
+var im = new Inputmask("+7(999) 999-99-99");
+im.mask(selector);
+const regex = /[\\\/:*?"<>|%;]+/;
+
+new JustValidate('.contacts__form', {
+  rules: {
+    name: {
+      required: true,
+      minLength: 2,
+      maxLength: 10
+    },
+    tel: {
+      required: true,
+      function: (name, value) => {
+        const phone = selector.inputmask.unmaskedvalue()
+        return Number(phone) && phone.length === 10
+      }
+    },
+  },
+  messages: {
+    name: {
+      minLength: 'Имя должно содержать более двух символов',
+      maxLength: 'Имя не должно содержать более десяти символов',
+      required: 'Напишите ваше имя',
+      function: 'Недопустиый формат'
+    },
+    tel: {
+      required: 'Укажите контактный телефон',
+      function: 'Номер указан неверно'
+    },
+  },
+});
