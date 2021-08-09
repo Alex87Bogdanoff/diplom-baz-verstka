@@ -59,3 +59,4 @@ if ($_FILES){
 	}
 }
 $mail->send();
+?>

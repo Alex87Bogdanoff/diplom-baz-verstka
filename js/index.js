@@ -370,7 +370,9 @@ var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7(999) 999-99-99");
 im.mask(selector);
 
-new JustValidate('.contacts__form', {
+//new JustValidate('.contacts__form', {
+let validateForms = function(selector, rules, successModal, yaGoal) {
+    new window.JustValidate(selector, {
   rules: {
     name: {
       required: true,
@@ -419,3 +421,4 @@ new JustValidate('.contacts__form', {
     form.reset();
   }
 });
+}
