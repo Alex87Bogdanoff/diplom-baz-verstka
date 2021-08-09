@@ -1,62 +1,34 @@
-<?
-require_once 'PHPMailer/PHPMailerAutoload.php';
+<?php
+//Для начала проверим есть ли данные в полях name и email, что бы не слать совсем пустые формы :)
+//Если всё в порядке, то работаем дальше
+if (isset($_POST["name"]) && isset($_POST["tel"]) ) {
 
-$admin_email = array();
-foreach ( $_POST["admin_email"] as $key => $value ) {
-	array_push($admin_email, $value);
+//Принимаем данные POST-запроса и записываем значения в переменные
+
+$name = $_POST['name'];
+$phone = $_POST['tel'];
+
+
+//Теперь давайте настроим куда отправляем и откуда
+
+$my_email = 'alex87bogdanoff@gmail.com'; // Куда отправляем
+$headers = "Content-type: text/html; charset=windows-1251 \r\n";
+$headers .= "From: От кого письмо <https://alex87bogdanoff.github.io/diplom-baz-verstka>>\r\n";
+$headers .= "Reply-To: reply-to@example.com\r\n";
+$sender_email = ''; // От кого отправляем
+$title = "Заголовок сообщения";
+
+//Сообщение, которое приходит на почту со всеми нужными нам данными:
+
+$mes = "
+ Имя: $name\n
+ Телефон: $tel\n
+";
+
+//Всё, теперь можно отправлять письмо на почту
+
+$send = mail ($my_email,$title,$headers);
+
 }
 
-$form_subject = trim($_POST["form_subject"]);
-
-$mail = new PHPMailer;
-$mail->CharSet = 'UTF-8';
-
-
-
-$c = true;
-$message = '';
-foreach ( $_POST as $key => $value ) {
-	if ( $value != ""  && $key != "admin_email" && $key != "form_subject" ) {
-		if (is_array($value)) {
-			$val_text = '';
-			foreach ($value as $val) {
-				if ($val && $val != '') {
-					$val_text .= ($val_text==''?'':', ').$val;
-				}
-			}
-			$value = $val_text;
-		}
-		$message .= "
-		" . ( ($c = !$c) ? '<tr>':'<tr>' ) . "
-		<td style='padding: 10px; width: auto;'><b>$key:</b></td>
-		<td style='padding: 10px;width: 100%;'>$value</td>
-		</tr>
-		";
-	}
-}
-$message = "<table style='width: 50%;'>$message</table>";
-
-
-// От кого
-$mail->setFrom('adm@' . $_SERVER['HTTP_HOST'], 'Your best site');
-
-// Кому
-foreach ( $admin_email as $key => $value ) {
-	$mail->addAddress($value);
-}
-// Тема письма
-$mail->Subject = $form_subject;
-
-// Тело письма
-$body = $message;
-// $mail->isHTML(true);  это если прям верстка
-$mail->msgHTML($body);
-
-// Приложения
-if ($_FILES){
-	foreach ( $_FILES['file']['tmp_name'] as $key => $value ) {
-		$mail->addAttachment($value, $_FILES['file']['name'][$key]);
-	}
-}
-$mail->send();
 ?>
