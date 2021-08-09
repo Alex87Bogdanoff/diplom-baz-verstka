@@ -18,7 +18,6 @@ button.forEach(el => {
 });
 
 document.addEventListener('click', (e) => {
-  console.log(e.target)
   if (!e.target.classList.contains('list-dropdown') && !e.target.classList.contains('list-item__btn')) {
     drop.forEach(el => { el.classList.remove(('list-dropdown--active')) })
     button.forEach(el => { el.classList.remove(('list-item__btn--active')) })
@@ -89,10 +88,24 @@ const swiperGallery = new Swiper('.gallery__swiper', {
 });
 
 /* Клик Gallery */
+$('.slide-hover').on('click', function () {
+  $('body').css('overflow', 'hidden');
+  document.getElementById('modal__scrollbar').style.display = 'block';
+});
+
+$('#gallery__modal').on('click', function () {
+  $('body').css('overflow', '');
+  document.getElementById('modal__scrollbar').style.display = 'none';
+});
+
+$('.modal__btn').on('click', function () {
+  $('body').css('overflow', '');
+  document.getElementById('modal__scrollbar').style.display = 'none';
+});
+
 $('#gallery__modal').attr('open-info');
 
 $(document).ready(function () {
-
   $(".slide-hover").click(function () {
     $('#gallery__modal').fadeIn(300);
     var iddiv = $(this).attr("data-path");
@@ -109,28 +122,17 @@ $(document).ready(function () {
 });
 
 /* Аккордеон Catalog */
-$(function () {
-  $("#italian__accordion").accordion({
-    collapsible: true,
-    heightStyle: "content"
-  });
-});
 
 $(function () {
-  $("#germany__accordion").accordion({
-    collapsible: true,
-    heightStyle: "content"
-  });
-});
-
-$(function () {
-  $("#france__accordion").accordion({
+  $("#italian__accordion, #germany__accordion, #france__accordion").accordion({
     collapsible: true,
     heightStyle: "content"
   });
 });
 
 /* Табы Catalog */
+/*$('.accordion').accordion("refresh")*/
+
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.tabs-country__btn').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
@@ -139,31 +141,63 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelectorAll('.tabs__item').forEach(function (tabContent) {
         tabContent.classList.remove('tabs__item-active')
       })
+
       document.querySelector(`[data-target="${path}"]`).classList.add('tabs__item-active')
 
       document.querySelectorAll('.tabs-country__btn').forEach(function (tabContent) {
         tabContent.classList.remove('tabs-country__btn-active')
       })
+
       document.querySelector(`[data-path="${path}"]`).classList.add('tabs-country__btn-active')
-      $('.accordion').accordion("refresh");
     })
   })
-  document.querySelectorAll('.accordion__artist-name').forEach(function (tabsBtn) {
+  document.querySelectorAll('.accordion__artist-name--italy').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
 
-      document.querySelectorAll('.artist__item').forEach(function (tabContent) {
+      document.querySelectorAll('.artist__item--italy').forEach(function (tabContent) {
         tabContent.classList.remove('artist__item-active')
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('artist__item-active')
 
-      document.querySelectorAll('.accordion__artist-name').forEach(function (tabContent) {
+      document.querySelectorAll('.accordion__artist-name--italy').forEach(function (tabContent) {
+        tabContent.classList.remove('accordion__artist-name-active')
+      })
+      document.querySelector(`[data-path="${path}"]`).classList.add('accordion__artist-name-active')
+    })
+  })
+  document.querySelectorAll('.accordion__artist-name--france').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (event) {
+      const path = event.currentTarget.dataset.path
+
+      document.querySelectorAll('.artist__item--france').forEach(function (tabContent) {
+        tabContent.classList.remove('artist__item-active')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('artist__item-active')
+
+      document.querySelectorAll('.accordion__artist-name--france').forEach(function (tabContent) {
+        tabContent.classList.remove('accordion__artist-name-active')
+      })
+      document.querySelector(`[data-path="${path}"]`).classList.add('accordion__artist-name-active')
+    })
+  })
+  document.querySelectorAll('.accordion__artist-name--germany').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (event) {
+      const path = event.currentTarget.dataset.path
+
+      document.querySelectorAll('.artist__item--germany').forEach(function (tabContent) {
+        tabContent.classList.remove('artist__item-active')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('artist__item-active')
+
+      document.querySelectorAll('.accordion__artist-name--germany').forEach(function (tabContent) {
         tabContent.classList.remove('accordion__artist-name-active')
       })
       document.querySelector(`[data-path="${path}"]`).classList.add('accordion__artist-name-active')
     })
   })
 })
+
 
 /* Кнопка Events */
 window.addEventListener('DOMContentLoaded', function() {
@@ -323,11 +357,10 @@ function init(){
 
   var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/contacts_img/maps-icon.svg',
+    iconImageHref: '../img/contacts_img/point.png',
     iconImageSize: [20, 20],
     iconImageOffset: [20, 20]
   });
-
   myMap.geoObjects.add(myGeoObject);
   myMap.geoObjects.add(myPlacemark);
 }
@@ -336,14 +369,16 @@ function init(){
 var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7(999) 999-99-99");
 im.mask(selector);
-const regex = /[\\\/:*?"<>|%;]+/;
 
 new JustValidate('.contacts__form', {
   rules: {
     name: {
       required: true,
       minLength: 2,
-      maxLength: 10
+      maxLength: 10,
+      strength: {
+        custom : '[A-Za-zА-Яа-яЁё]'
+      }
     },
     tel: {
       required: true,
@@ -358,7 +393,7 @@ new JustValidate('.contacts__form', {
       minLength: 'Имя должно содержать более двух символов',
       maxLength: 'Имя не должно содержать более десяти символов',
       required: 'Напишите ваше имя',
-      function: 'Недопустиый формат'
+      strength: 'Недопустиый формат'
     },
     tel: {
       required: 'Укажите контактный телефон',

@@ -161,6 +161,15 @@ header {
   margin-right: 180px;
 }
 
+.logo {
+  transition: outline .2s ease-in-out;
+}
+
+.logo:focus {
+  outline: 2px solid var(--dark-purple-color);
+  outline-offset: 5px;
+}
+
 .logo__img {
   width: 173px;
   height: 40px;
@@ -458,7 +467,12 @@ header {
   background-position: center;
   background-size: 100%;
   cursor: pointer;
-  transition: outline .5s ease-in-out;
+  transition: outline .2s ease-in-out;
+}
+
+.search__btn:focus {
+  outline: 2px solid var(--dark-purple-color);
+  outline-offset: 5px;
 }
 
 .search__input {
@@ -502,7 +516,7 @@ header {
 
 .hero__container {
   position: relative;
-  padding-top: 181px;
+  padding-top: 241px;
   height: 100%;
   z-index: 2;
 }
@@ -993,6 +1007,11 @@ header {
   display: flex;
 }
 
+.artist__item[data-target="france one"]~.tabs-country__btn-active~ {
+  display: flex;
+  flex-direction: row;
+}
+
 .tabs__left {
   margin-right: 50px;
   max-width: 750px;
@@ -1161,6 +1180,7 @@ header {
   position: relative;
   border: none;
   border-bottom: 1px solid transparent;
+  width: fit-content;
   font-size: 16px;
   line-height: 31px;
   background-color: transparent;
@@ -1283,7 +1303,7 @@ header {
 }
 
 .events-active.events-list__item:nth-child(n+4) {
-  display: inline-block;
+  display: flex;
 }
 
 .events-list__item:not(:nth-child(3n)){
@@ -1325,12 +1345,13 @@ header {
 }
 
 .events-list__text {
+  padding-bottom: 20px;
+  margin-bottom: auto;
   line-height: 32px;
 }
 
 .events-list__link {
   display: flex;
-  margin-top: auto;
   border-bottom: 1px solid var(--purple-color);
   width: max-content;
   color: var(--purple-color);
@@ -1507,6 +1528,12 @@ header {
   background: rgba(157, 92, 208, 0.5);
   cursor: pointer;
   transition: background-color .2s ease;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .publishes__price__input:hover,
@@ -1993,13 +2020,17 @@ header {
 
 .modal__gallery {
   position: fixed;
-  left: 26.3%;
-  bottom: 24%;
+  top: calc((100% - 500px) / 2);
+  right: calc((100% - 900px) / 2);
   display: none;
   width: 900px;
   height: 500px;
   z-index: 9999;
   background-color: var(--white-color);
+}
+
+#modal__scrollbar {
+  overflow-y: scroll; top: 0; right: 0; display: none; height: 100%; position: fixed;
 }
 
 .modal__item {
@@ -2035,8 +2066,11 @@ header {
   position: absolute;
   top: 20px;
   right: 20px;
+  border: none;
   width: 16px;
   height: 16px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .modal__btn::before, .modal__btn::after {
