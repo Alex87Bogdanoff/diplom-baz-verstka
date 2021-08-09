@@ -1007,11 +1007,6 @@ header {
   display: flex;
 }
 
-.artist__item[data-target="france one"]~.tabs-country__btn-active~ {
-  display: flex;
-  flex-direction: row;
-}
-
 .tabs__left {
   margin-right: 50px;
   max-width: 750px;
