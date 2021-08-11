@@ -1799,7 +1799,6 @@ input::-webkit-inner-spin-button {
 .contacts {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 700px;
 }
 
 .contacts__heading {
@@ -1811,15 +1810,13 @@ input::-webkit-inner-spin-button {
 }
 
 .contacts__info {
-  position: absolute;
-  left: 0;
   display: flex;
   flex-direction: column;
-  padding: 128px 122px 121px 150px;
+  padding: 128px 122px 121px max(49px, calc((100% - 1602px) / 2));
   border: 1px solid var(--light-grey-color);
-  width: 674px;
+  width: 100%;
+  max-width: 680px;
   background-color: var(--white-color);
-  z-index: 3;
 }
 
 .contacts__market-name {
@@ -1959,12 +1956,8 @@ input::-webkit-inner-spin-button {
 }
 
 #map {
-  position: absolute;
-  left: 0;
-  right: 0;
   width: 100%;
   height: 700px;
-  z-index: 2;
 }
 
 [class*="ground-pane"] {
@@ -2025,7 +2018,12 @@ input::-webkit-inner-spin-button {
 }
 
 #modal__scrollbar {
-  overflow-y: scroll; top: 0; right: 0; display: none; height: 100%; position: fixed;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .modal__item {
