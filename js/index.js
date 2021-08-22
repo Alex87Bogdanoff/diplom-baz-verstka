@@ -1,10 +1,12 @@
 /* Селект Header */
+
 const element = document.querySelector('select');
 const choices = new Choices(element, {
   searchEnabled: false
 });
 
 /* Клик Header */
+
 const button = document.querySelectorAll('.list-item__btn');
 const drop = document.querySelectorAll('.list-dropdown')
 
@@ -24,7 +26,32 @@ document.addEventListener('click', (e) => {
   }
 });
 
+/* Burger Header */
+
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#burger').addEventListener('click', function() {
+      document.querySelector('#burger__menu').classList.toggle('burger-active')
+  })
+})
+
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#burger__btn-close').addEventListener('click', function() {
+      document.querySelector('#burger__menu').classList.toggle('burger-active')
+  })
+})
+
+/* Search Header */
+
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#search__btn').addEventListener('click', function() {
+    document.querySelector('#top-menu__search').classList.toggle('top-menu__search--background')
+    document.querySelector('#search__input').classList.toggle('search__input--active')
+    document.querySelector('#search__btn').classList.toggle('search__btn--active')
+  })
+})
+
 /* Слайдер Gallery */
+
 const swiperGallery = new Swiper('.gallery__swiper', {
   pagination: {
     el: '.swip__pagination',
@@ -71,14 +98,14 @@ const swiperGallery = new Swiper('.gallery__swiper', {
       slidesPerColumn: 2,
     },
 
-    1024: {
+    1025: {
       spaceBetween: 50,
       slidesPerView: 2,
       slidesPerGroup: 2,
       slidesPerColumn: 2,
     },
 
-    1920: {
+    1681: {
       spaceBetween: 50,
       slidesPerView: 3,
       slidesPerGroup: 3,
@@ -131,35 +158,28 @@ $(function () {
 });
 
 /* Табы Catalog */
-/*$('.accordion').accordion("refresh")*/
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.tabs-country__btn').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
-
       document.querySelectorAll('.tabs__item').forEach(function (tabContent) {
         tabContent.classList.remove('tabs__item-active')
       })
-
       document.querySelector(`[data-target="${path}"]`).classList.add('tabs__item-active')
-
       document.querySelectorAll('.tabs-country__btn').forEach(function (tabContent) {
         tabContent.classList.remove('tabs-country__btn-active')
       })
-
       document.querySelector(`[data-path="${path}"]`).classList.add('tabs-country__btn-active')
     })
   })
   document.querySelectorAll('.accordion__artist-name--italy').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
-
       document.querySelectorAll('.artist__item--italy').forEach(function (tabContent) {
         tabContent.classList.remove('artist__item-active')
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('artist__item-active')
-
       document.querySelectorAll('.accordion__artist-name--italy').forEach(function (tabContent) {
         tabContent.classList.remove('accordion__artist-name-active')
       })
@@ -169,12 +189,10 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.accordion__artist-name--france').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
-
       document.querySelectorAll('.artist__item--france').forEach(function (tabContent) {
         tabContent.classList.remove('artist__item-active')
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('artist__item-active')
-
       document.querySelectorAll('.accordion__artist-name--france').forEach(function (tabContent) {
         tabContent.classList.remove('accordion__artist-name-active')
       })
@@ -184,12 +202,10 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.accordion__artist-name--germany').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
-
       document.querySelectorAll('.artist__item--germany').forEach(function (tabContent) {
         tabContent.classList.remove('artist__item-active')
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('artist__item-active')
-
       document.querySelectorAll('.accordion__artist-name--germany').forEach(function (tabContent) {
         tabContent.classList.remove('accordion__artist-name-active')
       })
@@ -198,13 +214,11 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
-
 /* Кнопка Events */
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.events__btn').addEventListener('click', function() {
       document.querySelector('.events-list__item:nth-child(n+4)').classList.toggle('events-active')
       document.querySelector('.events-list__item:nth-child(n+5)').classList.toggle('events-active')
-      document.querySelector('.events-list__item:nth-child(n+3)').classList.toggle('events-active')
       document.querySelector('.events__btn').classList.toggle('events__btn-none')
   })
 })
@@ -241,28 +255,29 @@ const publishesSwiper = new Swiper('.publishes__swiper-container', {
       slidesPerGroup: 2,
     },
 
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 34,
-      slidesPerGroup: 2,
-    },
-
-    1024: {
+    769: {
       slidesPerView: 2,
       spaceBetween: 49,
       slidesPerGroup: 2,
     },
 
-    1920: {
-      slidesPerView: 3,
+    1025: {
+      slidesPerView: 2,
       spaceBetween: 50,
       slidesPerGroup: 2,
+    },
+
+    1681: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 3,
     },
   }
 });
 
 
 /* Слайдер Projects */
+
 const projectsSwiper = new Swiper('.projects__swiper-container', {
 
   navigation: {
@@ -298,7 +313,7 @@ const projectsSwiper = new Swiper('.projects__swiper-container', {
         spaceBetween: 50,
         slidesPerGroup: 2,
     },
-    1900: {
+    1681: {
         slidesPerView: 3,
         spaceBetween: 50,
         slidesPerGroup: 3,
@@ -318,6 +333,7 @@ tippy('#tooltip-three', {
 });
 
 /* Карта Contacts */
+
 ymaps.ready(init);
 function init(){
   var myMap = new ymaps.Map("map", {
@@ -336,6 +352,7 @@ function init(){
       }
     }
   });
+
   myMap.controls.add(zoomControl);
 
   var GeolocationControl = new ymaps.control.GeolocationControl({
@@ -347,6 +364,7 @@ function init(){
       }
     }
   });
+
   myMap.controls.add(GeolocationControl);
 
   var myGeoObject = new ymaps.GeoObject({
@@ -366,11 +384,11 @@ function init(){
 }
 
 /* Форма Contacts */
+
 var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7(999) 999-99-99");
 im.mask(selector);
 
-//new JustValidate('.contacts__form', {
 let validateForms = function(selector, rules, successModal, yaGoal) {
     new window.JustValidate(selector, {
   rules: {
@@ -419,6 +437,6 @@ let validateForms = function(selector, rules, successModal, yaGoal) {
     xhr.send(formData);
 
     form.reset();
-  }
-});
+    }
+  });
 }
