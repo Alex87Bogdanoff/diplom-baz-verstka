@@ -44,10 +44,21 @@ window.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#search__btn').addEventListener('click', function() {
+    document.querySelector('#top-menu').classList.toggle('top-menu__container--active')
     document.querySelector('#top-menu__search').classList.toggle('top-menu__search--background')
     document.querySelector('#search__input').classList.toggle('search__input--active')
     document.querySelector('#search__btn').classList.toggle('search__btn--active')
+    document.querySelector('#search__btn-close').classList.toggle('search__btn-close--active')
   })
+
+  document.querySelector('#search__btn-close').addEventListener('click', function() {
+    document.querySelector('#top-menu').classList.remove('top-menu__container--active')
+    document.querySelector('#top-menu__search').classList.remove('top-menu__search--background')
+    document.querySelector('#search__input').classList.remove('search__input--active')
+    document.querySelector('#search__btn').classList.remove('search__btn--active')
+    document.querySelector('#search__btn-close').classList.remove('search__btn-close--active')
+  })
+
 })
 
 /* Слайдер Gallery */
@@ -78,20 +89,10 @@ const swiperGallery = new Swiper('.gallery__swiper', {
 
   breakpoints: {
     320: {
-      spaceBetween: 0,
       slidesPerView: 1,
-      slidesPerGroup: 1,
-      slidesPerColumn: 1,
     },
 
-    460: {
-      spaceBetween: 34,
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      slidesPerColumn: 1,
-    },
-
-    768: {
+    577: {
       spaceBetween: 34,
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -217,9 +218,10 @@ document.addEventListener('DOMContentLoaded', function () {
 /* Кнопка Events */
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.events__btn').addEventListener('click', function() {
-      document.querySelector('.events-list__item:nth-child(n+4)').classList.toggle('events-active')
-      document.querySelector('.events-list__item:nth-child(n+5)').classList.toggle('events-active')
-      document.querySelector('.events__btn').classList.toggle('events__btn-none')
+    document.querySelector('.events-list__item:nth-child(n+3)').classList.toggle('events-active')
+    document.querySelector('.events-list__item:nth-child(n+4)').classList.toggle('events-active')
+    document.querySelector('.events-list__item:nth-child(n+5)').classList.toggle('events-active')
+    document.querySelector('.events__btn').classList.toggle('events__btn-none')
   })
 })
 
@@ -249,13 +251,13 @@ const publishesSwiper = new Swiper('.publishes__swiper-container', {
 
   breakpoints: {
 
-    320: {
+    577: {
       slidesPerView: 2,
       spaceBetween: 34,
       slidesPerGroup: 2,
     },
 
-    769: {
+    1000: {
       slidesPerView: 2,
       spaceBetween: 49,
       slidesPerGroup: 2,
@@ -337,7 +339,7 @@ tippy('#tooltip-three', {
 ymaps.ready(init);
 function init(){
   var myMap = new ymaps.Map("map", {
-    center: [55.758468, 37.621088],
+    center: [55.758468, 37.611088],
     zoom: 14,
     controls:  []
   });

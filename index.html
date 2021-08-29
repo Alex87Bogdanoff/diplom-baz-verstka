@@ -20,7 +20,7 @@
       Blanchard - художественная галерея
     </h1>
     <div class="header__top-menu top-menu">
-      <div class="container top-menu__container">
+      <div id="top-menu" class="container top-menu__container">
         <button aria-label="Вызов навигационного меню" id="burger" class="btn burger__btn-open">
           <svg width="36" height="29" viewbox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect class="burger__btn-fill" width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
@@ -87,6 +87,7 @@
             </svg>
           </button>
           <input id="search__input" type="text" class="search__input">
+          <button id="search__btn-close" type="button" class="search__btn-close"></button>
         </form>
       </div>
     </div>
@@ -422,7 +423,7 @@
               <div role="button" tabindex="0" data-path="box_1" class="swiper-slide swip__slide slide-hover">
                 <picture >
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-1--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-1--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-1--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-1--1024.jpg">
                   <img src="img/gallery_img/swip__slide-1.jpg" alt="Картина: “Торс (Фигура с розовым лицом)”, автор: Казимир Малевич">
                 </picture>
@@ -430,7 +431,7 @@
               <div role="button" tabindex="0" data-path="box_2" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-2--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-2--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-2--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-2--1024.jpg">
                   <img src="img/gallery_img/swip__slide-2.jpg" alt="Картина: “Кубики”, автор: Казимир Малевич">
                 </picture>
@@ -438,7 +439,7 @@
               <div role="button" tabindex="0" data-path="box_3" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-3--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-3--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-3--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-3--1024.jpg">
                   <img src="img/gallery_img/swip__slide-3.jpg" alt="Картина: “Женщина с граблями”, автор: Казимир Малевич">
                 </picture>
@@ -446,7 +447,7 @@
               <div role="button" tabindex="0" data-path="box_4" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-4--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-4--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-4--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-4--1024.jpg">
                   <img src="img/gallery_img/swip__slide-4.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -454,7 +455,7 @@
               <div role="button" tabindex="0" data-path="box_5" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-5--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-5--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-5--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-5--1024.jpg">
                   <img src="img/gallery_img/swip__slide-5.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -462,7 +463,7 @@
               <div role="button" tabindex="0" data-path="box_6" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-6--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-6--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-6--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-6--1024.jpg">
                   <img src="img/gallery_img/swip__slide-6.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -470,7 +471,7 @@
               <div role="button" tabindex="0" data-path="box_7" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-7--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-7--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-7--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-7--1024.jpg">
                   <img src="img/gallery_img/swip__slide-7.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -478,7 +479,7 @@
               <div role="button" tabindex="0" data-path="box_8" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-8--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-8--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-8--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-8--1024.jpg">
                   <img src="img/gallery_img/swip__slide-8.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -486,7 +487,7 @@
               <div role="button" tabindex="0" data-path="box_9" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-9--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-9--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-9--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-9--1024.jpg">
                   <img src="img/gallery_img/swip__slide-9.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -494,7 +495,7 @@
               <div role="button" tabindex="0" data-path="box_10" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-10--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-10--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-10--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-10--1024.jpg">
                   <img src="img/gallery_img/swip__slide-10.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -502,7 +503,7 @@
               <div role="button" tabindex="0" data-path="box_11" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-11--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-11--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-11--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-11--1024.jpg">
                   <img src="img/gallery_img/swip__slide-11.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -510,7 +511,7 @@
               <div role="button" tabindex="0" data-path="box_12" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-12--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-12--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-12--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-12--1024.jpg">
                   <img src="img/gallery_img/swip__slide-12.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -518,7 +519,7 @@
               <div role="button" tabindex="0" data-path="box_13" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-13--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-13--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-13--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-13--1024.jpg">
                   <img src="img/gallery_img/swip__slide-13.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -526,7 +527,7 @@
               <div role="button" tabindex="0" data-path="box_14" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-14--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-14--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-14--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-14--1024.jpg">
                   <img src="img/gallery_img/swip__slide-14.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -534,7 +535,7 @@
               <div role="button" tabindex="0" data-path="box_15" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-15--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-15--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-15--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-15--1024.jpg">
                   <img src="img/gallery_img/swip__slide-15.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -542,7 +543,7 @@
               <div role="button" tabindex="0" data-path="box_16" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-16--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-16--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-16--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-16--1024.jpg">
                   <img src="img/gallery_img/swip__slide-16.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -550,7 +551,7 @@
               <div role="button" tabindex="0" data-path="box_17" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-17--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-17--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-17--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-17--1024.jpg">
                   <img src="img/gallery_img/swip__slide-17.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -558,7 +559,7 @@
               <div role="button" tabindex="0" data-path="box_18" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-18--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-18--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-18--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-18--1024.jpg">
                   <img src="img/gallery_img/swip__slide-18.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -566,7 +567,7 @@
               <div role="button" tabindex="0" data-path="box_19" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-19--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-19--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-19--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-19--1024.jpg">
                   <img src="img/gallery_img/swip__slide-19.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -574,7 +575,7 @@
               <div role="button" tabindex="0" data-path="box_20" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-20--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-20--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-20--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-20--1024.jpg">
                   <img src="img/gallery_img/swip__slide-20.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -582,7 +583,7 @@
               <div role="button" tabindex="0" data-path="box_21" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-21--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-21--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-21--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-21--1024.jpg">
                   <img src="img/gallery_img/swip__slide-21.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -590,7 +591,7 @@
               <div role="button" tabindex="0" data-path="box_22" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-22--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-22--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-22--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-22--1024.jpg">
                   <img src="img/gallery_img/swip__slide-22.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -598,7 +599,7 @@
               <div role="button" tabindex="0" data-path="box_23" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-23--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-23--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-23--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-23--1024.jpg">
                   <img src="img/gallery_img/swip__slide-23.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -606,7 +607,7 @@
               <div role="button" tabindex="0" data-path="box_24" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-24--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-24--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-24--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-24--1024.jpg">
                   <img src="img/gallery_img/swip__slide-24.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -614,7 +615,7 @@
               <div role="button" tabindex="0" data-path="box_25" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-25--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-25--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-25--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-25--1024.jpg">
                   <img src="img/gallery_img/swip__slide-25.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -622,7 +623,7 @@
               <div role="button" tabindex="0" data-path="box_26" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-26--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-26--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-26--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-26--1024.jpg">
                   <img src="img/gallery_img/swip__slide-26.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -630,7 +631,7 @@
               <div role="button" tabindex="0" data-path="box_27" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-27--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-27--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-27--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-27--1024.jpg">
                   <img src="img/gallery_img/swip__slide-27.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -638,7 +639,7 @@
               <div role="button" tabindex="0" data-path="box_28" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-28--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-28--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-28--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-28--1024.jpg">
                   <img src="img/gallery_img/swip__slide-28.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -646,7 +647,7 @@
               <div role="button" tabindex="0" data-path="box_29" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-29--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-29--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-29--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-29--1024.jpg">
                   <img src="img/gallery_img/swip__slide-29.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -654,7 +655,7 @@
               <div role="button" tabindex="0" data-path="box_30" class="swiper-slide swip__slide slide-hover">
                 <picture>
                   <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-30--320.jpg">
-                  <source media="(max-width: 768px)" srcset="img/gallery_img/swip__slide-30--768.jpg">
+                  <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-30--768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-30--1024.jpg">
                   <img src="img/gallery_img/swip__slide-30.jpg" alt="Картина: изумительная, автор: молодец">
                 </picture>
@@ -748,7 +749,7 @@
             <div class="artist__item artist__item--france" data-target="france one">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -765,7 +766,7 @@
             <div class="artist__item artist__item--france" data-target="france two">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -782,7 +783,7 @@
             <div class="artist__item artist__item--france" data-target="france three">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -799,7 +800,7 @@
             <div class="artist__item artist__item--france" data-target="france four">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -816,7 +817,7 @@
             <div class="artist__item artist__item--france" data-target="france five">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -833,7 +834,7 @@
             <div class="artist__item artist__item--france" data-target="france six">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -850,7 +851,7 @@
             <div class="artist__item artist__item--france" data-target="france seven">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -867,7 +868,7 @@
             <div class="artist__item artist__item--france" data-target="france eight">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -884,7 +885,7 @@
             <div class="artist__item artist__item--france" data-target="france nine">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -901,7 +902,7 @@
             <div class="artist__item artist__item--france" data-target="france ten">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -918,7 +919,7 @@
             <div class="artist__item artist__item--france" data-target="france eleven">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -935,7 +936,7 @@
             <div class="artist__item artist__item--france artist__item-active" data-target="france twelve">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/marmion--320.jpg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/marmion--768.jpg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/marmion--768.jpg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/marmion--1024.jpg">
                 <img src="img/catalog_img/marmion.jpg"
                   alt="Аббат Гийом Фийастр преподносит манускрипт хроник герцогу Бургундскому">
@@ -953,7 +954,7 @@
             <div class="artist__item artist__item--france" data-target="france thirteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -970,7 +971,7 @@
             <div class="artist__item artist__item--france" data-target="france foutrteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -987,7 +988,7 @@
             <div class="artist__item artist__item--france" data-target="france fiveteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1004,7 +1005,7 @@
             <div class="artist__item artist__item--france" data-target="france sixteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1021,7 +1022,7 @@
             <div class="artist__item artist__item--france" data-target="france seventeen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1038,7 +1039,7 @@
             <div class="artist__item artist__item--france" data-target="france eighteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1055,7 +1056,7 @@
             <div class="artist__item artist__item--france" data-target="france nineteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1072,7 +1073,7 @@
             <div class="artist__item artist__item--france" data-target="france twenty">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1089,7 +1090,7 @@
             <div class="artist__item artist__item--france" data-target="france twenty one">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1106,7 +1107,7 @@
             <div class="artist__item artist__item--france" data-target="france twenty two">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1123,7 +1124,7 @@
             <div class="artist__item artist__item--france" data-target="france twenty three">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1140,7 +1141,7 @@
             <div class="artist__item artist__item--france" data-target="france twenty four">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1157,7 +1158,7 @@
             <div class="artist__item artist__item--france" data-target="france twenty five">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1174,7 +1175,7 @@
             <div class="artist__item artist__item--france" data-target="france twenty six">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1191,7 +1192,7 @@
             <div class="artist__item artist__item--france" data-target="france twenty seven">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1484,7 +1485,7 @@
             <div class="artist__item artist__item--germany" data-target="germany one">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1501,7 +1502,7 @@
             <div class="artist__item artist__item--germany" data-target="germany two">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1518,7 +1519,7 @@
             <div class="artist__item artist__item--germany" data-target="germany three">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1535,7 +1536,7 @@
             <div class="artist__item artist__item--germany" data-target="germany four">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1552,7 +1553,7 @@
             <div class="artist__item artist__item--germany" data-target="germany five">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1569,7 +1570,7 @@
             <div class="artist__item artist__item--germany" data-target="germany six">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1586,7 +1587,7 @@
             <div class="artist__item artist__item--germany" data-target="germany seven">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1603,7 +1604,7 @@
             <div class="artist__item artist__item--germany" data-target="germany eight">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1620,7 +1621,7 @@
             <div class="artist__item artist__item--germany" data-target="germany nine">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1637,7 +1638,7 @@
             <div class="artist__item artist__item--germany" data-target="germany ten">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1654,7 +1655,7 @@
             <div class="artist__item artist__item--germany" data-target="germany eleven">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1671,7 +1672,7 @@
             <div class="artist__item artist__item--germany artist__item-active" data-target="germany twelve">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/durer--320.jpg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/durer--768.jpg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/durer--768.jpg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/durer--1024.jpg">
                 <img src="img/catalog_img/durer.jpg" alt="Портрет Альбрехт Дюрер">
               </picture>
@@ -1688,7 +1689,7 @@
             <div class="artist__item artist__item--germany" data-target="germany thirteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1705,7 +1706,7 @@
             <div class="artist__item artist__item--germany" data-target="germany foutrteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1722,7 +1723,7 @@
             <div class="artist__item artist__item--germany" data-target="germany fiveteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1739,7 +1740,7 @@
             <div class="artist__item artist__item--germany" data-target="germany sixteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1756,7 +1757,7 @@
             <div class="artist__item artist__item--germany" data-target="germany seventeen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1773,7 +1774,7 @@
             <div class="artist__item artist__item--germany" data-target="germany eighteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1790,7 +1791,7 @@
             <div class="artist__item artist__item--germany" data-target="germany nineteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1807,7 +1808,7 @@
             <div class="artist__item artist__item--germany" data-target="germany twenty">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1824,7 +1825,7 @@
             <div class="artist__item artist__item--germany" data-target="germany twenty one">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1841,7 +1842,7 @@
             <div class="artist__item artist__item--germany" data-target="germany twenty two">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1858,7 +1859,7 @@
             <div class="artist__item artist__item--germany" data-target="germany twenty three">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1875,7 +1876,7 @@
             <div class="artist__item artist__item--germany" data-target="germany twenty four">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1892,7 +1893,7 @@
             <div class="artist__item artist__item--germany" data-target="germany twenty five">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -1909,7 +1910,7 @@
             <div class="artist__item artist__item--germany" data-target="germany twenty six">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2197,7 +2198,7 @@
             <div class="artist__item artist__item--italy" data-target="italian one">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2214,7 +2215,7 @@
             <div class="artist__item artist__item--italy" data-target="italian two">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2231,7 +2232,7 @@
             <div class="artist__item artist__item--italy" data-target="italian three">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2248,7 +2249,7 @@
             <div class="artist__item artist__item--italy" data-target="italian four">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2265,7 +2266,7 @@
             <div class="artist__item artist__item--italy" data-target="italian five">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2282,7 +2283,7 @@
             <div class="artist__item artist__item--italy" data-target="italian six">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2299,7 +2300,7 @@
             <div class="artist__item artist__item--italy" data-target="italian seven">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2316,7 +2317,7 @@
             <div class="artist__item artist__item--italy" data-target="italian eight">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2333,7 +2334,7 @@
             <div class="artist__item artist__item--italy" data-target="italian nine">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2350,7 +2351,7 @@
             <div class="artist__item artist__item--italy" data-target="italian ten">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2367,7 +2368,7 @@
             <div class="artist__item artist__item--italy" data-target="italian eleven">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2384,7 +2385,7 @@
             <div class="artist__item artist__item--italy artist__item-active" data-target="italian twelve">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/domenico--320.jpg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/domenico--768.jpg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/domenico--768.jpg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/domenico--1024.jpg">
                 <img src="img/catalog_img/domenico.jpg" alt="Портрет Доменико Гирландайо">
               </picture>
@@ -2401,7 +2402,7 @@
             <div class="artist__item artist__item--italy" data-target="italian thirteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2418,7 +2419,7 @@
             <div class="artist__item artist__item--italy" data-target="italian foutrteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2435,7 +2436,7 @@
             <div class="artist__item artist__item--italy" data-target="italian fiveteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2452,7 +2453,7 @@
             <div class="artist__item artist__item--italy" data-target="italian sixteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2469,7 +2470,7 @@
             <div class="artist__item artist__item--italy" data-target="italian seventeen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2486,7 +2487,7 @@
             <div class="artist__item artist__item--italy" data-target="italian eighteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2503,7 +2504,7 @@
             <div class="artist__item artist__item--italy" data-target="italian nineteen">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2520,7 +2521,7 @@
             <div class="artist__item artist__item--italy" data-target="italian twenty">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2537,7 +2538,7 @@
             <div class="artist__item artist__item--italy" data-target="italian twenty one">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2554,7 +2555,7 @@
             <div class="artist__item artist__item--italy" data-target="italian twenty two">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2571,7 +2572,7 @@
             <div class="artist__item artist__item--italy" data-target="italian twenty three">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2588,7 +2589,7 @@
             <div class="artist__item artist__item--italy" data-target="italian twenty four">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -2605,7 +2606,7 @@
             <div class="artist__item artist__item--italy" data-target="italian twenty five">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/stark--320.jpg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/stark--768.jpg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/stark--768.jpg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/stark--1024.jpg">
                 <img src="img/catalog_img/stark.jpg" alt="Фото Тони Старка">
               </picture>
@@ -2622,7 +2623,7 @@
             <div class="artist__item artist__item--italy" data-target="italian twenty six">
               <picture class="artist__picture">
                 <source media="(max-width: 320px)" srcset="img/catalog_img/anonymous--320.svg">
-                <source media="(max-width: 768px)" srcset="img/catalog_img/anonymous--768.svg">
+                <source media="(max-width: 970px)" srcset="img/catalog_img/anonymous--768.svg">
                 <source media="(max-width: 1680px)" srcset="img/catalog_img/anonymous--1024.svg">
                 <img src="img/catalog_img/anonymous.svg" alt="Мистер Икс">
               </picture>
@@ -3154,7 +3155,7 @@
         <ul class="list events__list events-list">
           <li class="events-list__item">
             <picture class="events-list__picture">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-1--768.jpg">
+              <source media="(max-width: 970px)" srcset="img/events_img/events-1--768.jpg">
               <source media="(max-width: 1280px)" srcset="img/events_img/events-1--1024.jpg">
               <img src="img/events_img/events-1.jpg" alt="">
             </picture>
@@ -3178,7 +3179,7 @@
           </li>
           <li class="events-list__item">
             <picture class="events-list__picture">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-2--768.jpg">
+              <source media="(max-width: 970px)" srcset="img/events_img/events-2--768.jpg">
               <source media="(max-width: 1280px)" srcset="img/events_img/events-2--1024.jpg">
               <img src="img/events_img/events-2.jpg" alt="">
             </picture>
@@ -3202,7 +3203,7 @@
           </li>
           <li class="events-list__item">
             <picture class="events-list__picture">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-3--768.jpg">
+              <source media="(max-width: 970px)" srcset="img/events_img/events-3--768.jpg">
               <source media="(max-width: 1280px)" srcset="img/events_img/events-3--1024.jpg">
               <img src="img/events_img/events-3.jpg" alt="">
             </picture>
@@ -3226,7 +3227,7 @@
           </li>
           <li class="events-list__item">
             <picture class="events-list__picture">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-4--768.jpg">
+              <source media="(max-width: 970px)" srcset="img/events_img/events-4--768.jpg">
               <source media="(max-width: 1280px)" srcset="img/events_img/events-4--1024.jpg">
               <img src="img/events_img/events-4.jpg" alt="">
             </picture>
@@ -3250,7 +3251,7 @@
           </li>
           <li class="events-list__item">
             <picture class="events-list__picture">
-              <source media="(max-width: 768px)" srcset="img/events_img/events-5--768.jpg">
+              <source media="(max-width: 970px)" srcset="img/events_img/events-5--768.jpg">
               <source media="(max-width: 1280px)" srcset="img/events_img/events-5--1024.jpg">
               <img src="img/events_img/events-5.jpg" alt="">
             </picture>
@@ -3736,8 +3737,8 @@
     <div id="box_1" class="modal__gallery">
       <div class="modal__item">
         <picture class="modal__picture">
-          <source media="(max-width: 320px)" srcset="img/catalog_img/swip__slide-1--click-320.jpg">
-          <source media="(max-width: 768px)" srcset="img/catalog_img/swip__slide-1--click-768.jpg">
+          <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-1--click-320.jpg">
+          <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-1--click-768.jpg">
           <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-1--click-1024.jpg">
           <img src="img/gallery_img/swip__slide-1--click.jpg" alt="Картина: “Торс (Фигура с розовым лицом)”, автор: Казимир Малевич">
         </picture>
@@ -3761,8 +3762,8 @@
     <div id="box_2" class="modal__gallery">
       <div class="modal__item">
         <picture class="modal__picture">
-          <source media="(max-width: 320px)" srcset="img/catalog_img/swip__slide-2--click-320.jpg">
-          <source media="(max-width: 768px)" srcset="img/catalog_img/swip__slide-2--click-768.jpg">
+          <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-2--click-320.jpg">
+          <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-2--click-768.jpg">
           <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-2--click-1024.jpg">
           <img src="img/gallery_img/swip__slide-2--click.jpg" alt="Картина: “Кубики”, автор: Казимир Малевич">
         </picture>
@@ -3786,8 +3787,8 @@
     <div id="box_3" class="modal__gallery">
       <div class="modal__item">
         <picture class="modal__picture">
-          <source media="(max-width: 320px)" srcset="img/catalog_img/swip__slide-3--click-320.jpg">
-          <source media="(max-width: 768px)" srcset="img/catalog_img/swip__slide-3--click-768.jpg">
+          <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-3--click-320.jpg">
+          <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-3--click-768.jpg">
           <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-3--click-1024.jpg">
           <img src="img/gallery_img/swip__slide-3--click.jpg" alt="Картина: “Женщина с граблями”, автор: Казимир Малевич">
         </picture>
@@ -3811,8 +3812,8 @@
     <div id="box_4" class="modal__gallery">
       <div class="modal__item">
         <picture class="modal__picture">
-          <source media="(max-width: 320px)" srcset="img/catalog_img/swip__slide-4--click-320.jpg">
-          <source media="(max-width: 768px)" srcset="img/catalog_img/swip__slide-4--click-768.jpg">
+          <source media="(max-width: 320px)" srcset="img/gallery_img/swip__slide-4--click-320.jpg">
+          <source media="(max-width: 970px)" srcset="img/gallery_img/swip__slide-4--click-768.jpg">
           <source media="(max-width: 1024px)" srcset="img/gallery_img/swip__slide-4--click-1024.jpg">
           <img src="img/gallery_img/swip__slide-4--click.jpg" alt="Картина: “Женщина с вёдрами”, автор: Казимир Малевич">
         </picture>
