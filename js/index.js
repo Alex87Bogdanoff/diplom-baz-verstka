@@ -51,6 +51,14 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#search__btn-close').classList.toggle('search__btn-close--active')
   })
 
+  document.querySelector('#search__btn-open').addEventListener('click', function() {
+    document.querySelector('#top-menu').classList.toggle('top-menu__container--active')
+    document.querySelector('#top-menu__search').classList.toggle('top-menu__search--background')
+    document.querySelector('#search__input').classList.toggle('search__input--active')
+    document.querySelector('#search__btn').classList.toggle('search__btn--active')
+    document.querySelector('#search__btn-close').classList.toggle('search__btn-close--active')
+  })
+
   document.querySelector('#search__btn-close').addEventListener('click', function() {
     document.querySelector('#top-menu').classList.remove('top-menu__container--active')
     document.querySelector('#top-menu__search').classList.remove('top-menu__search--background')
@@ -58,7 +66,6 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#search__btn').classList.remove('search__btn--active')
     document.querySelector('#search__btn-close').classList.remove('search__btn-close--active')
   })
-
 })
 
 /* Слайдер Gallery */
@@ -88,11 +95,13 @@ const swiperGallery = new Swiper('.gallery__swiper', {
   slidesPerColumnFill: 'row',
 
   breakpoints: {
-    320: {
+    1: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
+      slidesPerColumn: 1,
     },
 
-    577: {
+    601: {
       spaceBetween: 34,
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -215,7 +224,30 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+
+/* Слайдер Events */
+
+const eventsSwiper = new Swiper('.events__swiper-container', {
+  pagination: {
+    el: '.events__pagination',
+    type: 'bullets',
+  },
+});
+
 /* Кнопка Events */
+
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.events__btn').addEventListener('click', function() {
     document.querySelector('.events-list__item:nth-child(n+3)').classList.toggle('events-active')
@@ -226,6 +258,7 @@ window.addEventListener('DOMContentLoaded', function() {
 })
 
 /* Слайдер Publishes */
+
 const publishesSwiper = new Swiper('.publishes__swiper-container', {
   pagination: {
     el: '.publishes__swiper-pagination',
@@ -251,7 +284,7 @@ const publishesSwiper = new Swiper('.publishes__swiper-container', {
 
   breakpoints: {
 
-    577: {
+    601: {
       slidesPerView: 2,
       spaceBetween: 34,
       slidesPerGroup: 2,
@@ -277,6 +310,34 @@ const publishesSwiper = new Swiper('.publishes__swiper-container', {
   }
 });
 
+/* Спойлер Publishes */
+
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.categories__heading').addEventListener('click', function () {
+    document.querySelectorAll(".categories-list__label").forEach(list => {
+      list.parentElement.classList.toggle('categories-list__label-active');
+      if (list.querySelector(".categories-list__input").checked) {
+         list.parentElement.classList.add('categories-list__label-active');
+      }
+    })
+  })
+  document.querySelector('.categories-list__item').addEventListener('click', function () {
+    document.querySelectorAll(".categories-list__text::before").forEach(item => {
+      item.parentElement.classList.toggle('categories-list__item-active');
+      if (item.querySelector(".categories-list__input").checked) {
+          item.parentElement.classList.add('categories-list__item-active');
+      }
+    })
+  })
+  document.querySelectorAll(".categories-list__label").forEach(el => {
+    el.addEventListener("click", function () {
+      let checkbox = this.querySelector(".categories-list__input");
+      if (checkbox.checked) {
+          this.classList.remove("categories-list__label-active");
+      }
+    })
+  })
+})
 
 /* Слайдер Projects */
 
@@ -300,30 +361,31 @@ const projectsSwiper = new Swiper('.projects__swiper-container', {
 
 
   breakpoints: {
-    540: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-        slidesPerGroup: 2,
+    1: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      slidesPerColumn: 1,
     },
-    768: {
-        slidesPerView: 2,
-        spaceBetween: 34,
-        slidesPerGroup: 2,
+    601: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+      slidesPerGroup: 2,
     },
     1024: {
-        slidesPerView: 2,
-        spaceBetween: 50,
-        slidesPerGroup: 2,
+      slidesPerView: 2,
+      spaceBetween: 50,
+      slidesPerGroup: 2,
     },
     1681: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-        slidesPerGroup: 3,
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 3,
     }
   }
 });
 
 /* Tooltips Projects */
+
 tippy('#tooltip-one', {
   content: 'Пример современных тенденций - современная методология разработки',
 });
@@ -442,3 +504,8 @@ let validateForms = function(selector, rules, successModal, yaGoal) {
     }
   });
 }
+
+
+$('.accordion__artist-item').on('click', function() {
+  $('html,body').animate({scrollTop:$('.tabs__left').offset().top+"px"},{duration:1E3});
+});
