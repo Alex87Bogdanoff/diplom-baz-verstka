@@ -198,6 +198,8 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+/* Scroll Catalog */
+
 function scrollTo(element) {
   window.scroll({
     left: 0,
@@ -218,6 +220,7 @@ artist.addEventListener('click', () => {
 const eventsSwiper = new Swiper('.events__swiper-container', {
   pagination: {
     el: '.events__pagination',
+    clickable: true,
     type: 'bullets',
   },
 });
