@@ -161,7 +161,7 @@ $(document).ready(function () {
 /* Аккордеон Catalog */
 
 $(function () {
-  $("#italian__accordion, #germany__accordion, #france__accordion").accordion({
+  $("#germany__accordion, #france__accordion, #italian__accordion").accordion({
     collapsible: true,
     heightStyle: "content"
   });
@@ -183,40 +183,14 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector(`[data-path="${path}"]`).classList.add('tabs-country__btn-active')
     })
   })
-  document.querySelectorAll('.accordion__artist-name--italy').forEach(function (tabsBtn) {
+  document.querySelectorAll('.accordion__artist-name').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
-      document.querySelectorAll('.artist__item--italy').forEach(function (tabContent) {
+      document.querySelectorAll('.artist__item').forEach(function (tabContent) {
         tabContent.classList.remove('artist__item-active')
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('artist__item-active')
-      document.querySelectorAll('.accordion__artist-name--italy').forEach(function (tabContent) {
-        tabContent.classList.remove('accordion__artist-name-active')
-      })
-      document.querySelector(`[data-path="${path}"]`).classList.add('accordion__artist-name-active')
-    })
-  })
-  document.querySelectorAll('.accordion__artist-name--france').forEach(function (tabsBtn) {
-    tabsBtn.addEventListener('click', function (event) {
-      const path = event.currentTarget.dataset.path
-      document.querySelectorAll('.artist__item--france').forEach(function (tabContent) {
-        tabContent.classList.remove('artist__item-active')
-      })
-      document.querySelector(`[data-target="${path}"]`).classList.add('artist__item-active')
-      document.querySelectorAll('.accordion__artist-name--france').forEach(function (tabContent) {
-        tabContent.classList.remove('accordion__artist-name-active')
-      })
-      document.querySelector(`[data-path="${path}"]`).classList.add('accordion__artist-name-active')
-    })
-  })
-  document.querySelectorAll('.accordion__artist-name--germany').forEach(function (tabsBtn) {
-    tabsBtn.addEventListener('click', function (event) {
-      const path = event.currentTarget.dataset.path
-      document.querySelectorAll('.artist__item--germany').forEach(function (tabContent) {
-        tabContent.classList.remove('artist__item-active')
-      })
-      document.querySelector(`[data-target="${path}"]`).classList.add('artist__item-active')
-      document.querySelectorAll('.accordion__artist-name--germany').forEach(function (tabContent) {
+      document.querySelectorAll('.accordion__artist-name').forEach(function (tabContent) {
         tabContent.classList.remove('accordion__artist-name-active')
       })
       document.querySelector(`[data-path="${path}"]`).classList.add('accordion__artist-name-active')
@@ -224,18 +198,20 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-    smoothLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = smoothLink.getAttribute('href');
+function scrollTo(element) {
+  window.scroll({
+    left: 0,
+    top: element.offsetTop,
+    behavior: 'smooth'
+  })
+}
 
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-};
+var artist = document.querySelector('.accordion__artist-name');
+var item = document.querySelector('.tabs__left');
+
+artist.addEventListener('click', () => {
+  scrollTo(item);
+})
 
 /* Слайдер Events */
 

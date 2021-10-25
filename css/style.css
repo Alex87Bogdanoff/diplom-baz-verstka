@@ -2685,8 +2685,13 @@ input::-webkit-inner-spin-button {
     margin-right: 40px;
   }
 
+  .tabs-country {
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .tabs-country__item:not(:last-child) {
-    margin-right: 54px;
+    margin-right: 0px;
   }
 
   .catalog__descr {
