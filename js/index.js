@@ -28,43 +28,54 @@ document.addEventListener('click', (e) => {
 
 /* Burger Header */
 
+const burger = document.querySelector('#burger')
+const burgerClose = document.querySelector('#burger__btn-close')
+const burgerMenu = document.querySelector('#burger__menu')
+
 window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('#burger').addEventListener('click', function() {
-      document.querySelector('#burger__menu').classList.toggle('burger-active')
+  burger.addEventListener('click', function() {
+    burgerMenu.classList.toggle('burger-active')
   })
 })
 
 window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('#burger__btn-close').addEventListener('click', function() {
-      document.querySelector('#burger__menu').classList.toggle('burger-active')
+  burgerClose.addEventListener('click', function() {
+    burgerMenu.classList.toggle('burger-active')
   })
 })
 
 /* Search Header */
 
+const searchButton = document.querySelector('#search__btn');
+const topMenu = document.querySelector('#top-menu');
+const topMenuSearch = document.querySelector('#top-menu__search');
+const searchInput = document.querySelector('#search__input');
+const searchButtonClose = document.querySelector('#search__btn-close');
+const searchButtonOpen = document.querySelector('#search__btn-open')
+
 window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('#search__btn').addEventListener('click', function() {
-    document.querySelector('#top-menu').classList.toggle('top-menu__container--active')
-    document.querySelector('#top-menu__search').classList.toggle('top-menu__search--background')
-    document.querySelector('#search__input').classList.toggle('search__input--active')
-    document.querySelector('#search__btn').classList.toggle('search__btn--active')
-    document.querySelector('#search__btn-close').classList.toggle('search__btn-close--active')
+  searchButton.addEventListener('click', function() {
+    topMenu.classList.toggle('top-menu__container--active')
+    topMenuSearch.classList.toggle('top-menu__search--background')
+    searchInput.classList.toggle('search__input--active')
+    searchButton.classList.toggle('search__btn--active')
+    searchButtonClose.classList.toggle('search__btn-close--active')
   })
 
-  document.querySelector('#search__btn-open').addEventListener('click', function() {
-    document.querySelector('#top-menu').classList.toggle('top-menu__container--active')
-    document.querySelector('#top-menu__search').classList.toggle('top-menu__search--background')
-    document.querySelector('#search__input').classList.toggle('search__input--active')
-    document.querySelector('#search__btn').classList.toggle('search__btn--active')
-    document.querySelector('#search__btn-close').classList.toggle('search__btn-close--active')
+  searchButtonOpen.addEventListener('click', function() {
+    topMenu.classList.toggle('top-menu__container--active')
+    topMenuSearch.classList.toggle('top-menu__search--background')
+    searchInput.classList.toggle('search__input--active')
+    searchButton.classList.toggle('search__btn--active')
+    searchButtonClose.classList.toggle('search__btn-close--active')
   })
 
-  document.querySelector('#search__btn-close').addEventListener('click', function() {
-    document.querySelector('#top-menu').classList.remove('top-menu__container--active')
-    document.querySelector('#top-menu__search').classList.remove('top-menu__search--background')
-    document.querySelector('#search__input').classList.remove('search__input--active')
-    document.querySelector('#search__btn').classList.remove('search__btn--active')
-    document.querySelector('#search__btn-close').classList.remove('search__btn-close--active')
+  searchButtonClose.addEventListener('click', function() {
+    topMenu.classList.remove('top-menu__container--active')
+    topMenuSearch.classList.remove('top-menu__search--background')
+    searchInput.classList.remove('search__input--active')
+    searchButton.classList.remove('search__btn--active')
+    searchButtonClose.classList.remove('search__btn-close--active')
   })
 })
 
@@ -201,7 +212,9 @@ document.addEventListener('DOMContentLoaded', function () {
 /* Scroll Catalog */
 
 $('.accordion__artist-name').on('click', function() {
-  $('html,body').animate({scrollTop:$('.artist__item-active').offset().top+"px"},{duration:1E3});
+  if(window.matchMedia('(max-width: 600px)').matches){
+    $('html,body').animate({scrollTop:$('.artist__item-active').offset().top+"px"},{duration:1E3});
+  };
 });
 
 /* Слайдер Events */
@@ -473,8 +486,3 @@ let validateForms = function(selector, rules, successModal, yaGoal) {
     }
   });
 }
-
-
-$('.accordion__artist-item').on('click', function() {
-  $('html,body').animate({scrollTop:$('.tabs__left').offset().top+"px"},{duration:1E3});
-});
