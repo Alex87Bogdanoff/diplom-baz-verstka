@@ -200,20 +200,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* Scroll Catalog */
 
-function scrollTo(element) {
-  window.scroll({
-    left: 0,
-    top: element.offsetTop,
-    behavior: 'smooth'
-  })
-}
-
-var artist = document.querySelector('.accordion__artist-name');
-var item = document.querySelector('.tabs__left');
-
-artist.addEventListener('click', () => {
-  scrollTo(item);
-})
+$('.accordion__artist-name').on('click', function() {
+  $('html,body').animate({scrollTop:$('.artist__item-active').offset().top+"px"},{duration:1E3});
+});
 
 /* Слайдер Events */
 
@@ -223,6 +212,7 @@ const eventsSwiper = new Swiper('.events__swiper-container', {
     clickable: true,
     type: 'bullets',
   },
+  spaceBetween: 27,
 });
 
 /* Кнопка Events */
